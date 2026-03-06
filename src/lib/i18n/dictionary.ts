@@ -60,6 +60,7 @@ export interface UiDictionary {
   projectNumberLabel: string
   projectPartnersLabel: string
   projectLinksLabel: string
+  projectTeamLabel: string
   partnerRoleLabel: string
   highlightNotFoundTitle: string
   highlightNotFoundBody: string
@@ -134,6 +135,7 @@ export const uiDictionary: Record<Locale, UiDictionary> = {
     projectNumberLabel: 'Projektnummer',
     projectPartnersLabel: 'Projektpartner',
     projectLinksLabel: 'Weiterführende Links',
+    projectTeamLabel: 'Projektteam',
     partnerRoleLabel: 'Rolle',
     highlightNotFoundTitle: 'Highlight nicht gefunden',
     highlightNotFoundBody: 'Dieses Highlight existiert nicht oder wurde entfernt.',
@@ -206,6 +208,7 @@ export const uiDictionary: Record<Locale, UiDictionary> = {
     projectNumberLabel: 'Project number',
     projectPartnersLabel: 'Project partners',
     projectLinksLabel: 'External links',
+    projectTeamLabel: 'Project team',
     partnerRoleLabel: 'Role',
     highlightNotFoundTitle: 'Highlight not found',
     highlightNotFoundBody: 'This highlight does not exist or has been removed.',

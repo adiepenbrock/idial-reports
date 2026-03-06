@@ -1,0 +1,13 @@
+{
+  "id": "article-knowledge-graphs",
+  "order": 1,
+  "author": "Dr. Mara Stein",
+  "title": {
+    "de": "Wissensgraphen fuer klimaresiliente Stadtplanung",
+    "en": "Knowledge graphs for climate-resilient urban planning"
+  },
+  "teaser": {
+    "de": "Ein transdisziplinaerer Ansatz verbindet Geodaten, soziale Indikatoren und politische Szenarien.",
+    "en": "A transdisciplinary approach links geospatial data, social indicators, and policy scenarios."
+  }
+}

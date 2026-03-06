@@ -1,6 +1,7 @@
 import { Link, createFileRoute, getRouteApi } from '@tanstack/react-router'
 import { motion, useReducedMotion } from 'motion/react'
 import Reveal from '#/components/motion/Reveal'
+import { getBodyComponent } from '#/lib/content/loadReports'
 
 const yearRoute = getRouteApi('/$locale/report/$year')
 
@@ -76,9 +77,12 @@ function HighlightDetailPage() {
           <article className="article-content">
             <p className="article-lead">{highlight.detail[contentLocale]}</p>
 
-            {highlight.body ? (
-              <p className="highlight-body">{highlight.body[contentLocale]}</p>
-            ) : null}
+            {(() => {
+              const BodyComponent = getBodyComponent(report.year, 'highlights', highlightId, contentLocale)
+              return BodyComponent ? (
+                <div className="highlight-body-prose"><BodyComponent /></div>
+              ) : null
+            })()}
 
             {highlight.tags && highlight.tags.length > 0 ? (
               <div className="highlight-tags">

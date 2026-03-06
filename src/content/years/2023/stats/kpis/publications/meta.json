@@ -1,0 +1,14 @@
+{
+  "id": "publications",
+  "order": 1,
+  "value": 118,
+  "delta": "+9%",
+  "label": {
+    "de": "Publikationen",
+    "en": "Publications"
+  },
+  "description": {
+    "de": "Begutachtete Beitraege in Fachjournalen",
+    "en": "Peer-reviewed journal contributions"
+  }
+}

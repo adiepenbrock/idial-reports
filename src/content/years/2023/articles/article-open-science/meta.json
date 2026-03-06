@@ -1,0 +1,13 @@
+{
+  "id": "article-open-science",
+  "order": 2,
+  "author": "Prof. Leif Wagner",
+  "title": {
+    "de": "Open Science als Infrastrukturaufgabe",
+    "en": "Open science as an infrastructure mission"
+  },
+  "teaser": {
+    "de": "Wie wir Reproduzierbarkeit durch gemeinsame Standards und Werkzeuge messbar verbessern.",
+    "en": "How shared standards and tools improved reproducibility in measurable ways."
+  }
+}

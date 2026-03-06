@@ -1,0 +1,19 @@
+{
+  "id": "program-maturity",
+  "order": 1,
+  "unit": "Index",
+  "title": {
+    "de": "Programmreife pro Quartal",
+    "en": "Program maturity by quarter"
+  },
+  "description": {
+    "de": "Index aus Reifegrad, Transferfaehigkeit und Wiederverwendung in Partnerkontexten.",
+    "en": "Index combining maturity, transfer readiness, and reuse in partner contexts."
+  },
+  "points": [
+    { "id": "q1", "label": { "de": "Q1", "en": "Q1" }, "value": 81 },
+    { "id": "q2", "label": { "de": "Q2", "en": "Q2" }, "value": 90 },
+    { "id": "q3", "label": { "de": "Q3", "en": "Q3" }, "value": 99 },
+    { "id": "q4", "label": { "de": "Q4", "en": "Q4" }, "value": 108 }
+  ]
+}

@@ -1,6 +1,8 @@
 import { Link, createFileRoute, getRouteApi } from '@tanstack/react-router'
 import { motion, useReducedMotion } from 'motion/react'
 import Reveal from '#/components/motion/Reveal'
+import { getBodyComponent } from '#/lib/content/loadReports'
+
 const yearRoute = getRouteApi('/$locale/report/$year')
 
 export const Route = createFileRoute('/$locale/report/$year/article/$articleId')({
@@ -79,6 +81,13 @@ function ArticleDetailPage() {
         <Reveal delay={0.1}>
           <article className="article-content">
             <p className="article-lead">{article.teaser[contentLocale]}</p>
+
+            {(() => {
+              const BodyComponent = getBodyComponent(report.year, 'articles', articleId, contentLocale)
+              return BodyComponent ? (
+                <div className="article-body-prose"><BodyComponent /></div>
+              ) : null
+            })()}
 
             <div className="article-context-strip">
               <div className="article-context-item">

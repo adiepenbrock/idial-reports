@@ -1,15 +1,23 @@
+import type { ComponentType } from 'react'
 import type { z } from 'zod'
 import type { Locale } from '#/lib/i18n/locale'
 import type { SectionKey } from './sectionManifest'
-import type { yearDataSchema, yearMetaSchema } from './schemas'
+import type { resolvedYearDataSchema, yearMetaSchema } from './schemas'
 
 export type YearMeta = z.infer<typeof yearMetaSchema>
-export type YearData = z.infer<typeof yearDataSchema>
+export type YearData = z.infer<typeof resolvedYearDataSchema>
 
 export interface LoadedReportSection {
   key: SectionKey
   slug: string
   label: string
+}
+
+/** Used by the module-level body component registry in loadReports.ts */
+export interface BodyComponentMap {
+  articles: Record<string, ComponentType | null>
+  projects: Record<string, ComponentType | null>
+  highlights: Record<string, ComponentType | null>
 }
 
 export interface LoadedReport {

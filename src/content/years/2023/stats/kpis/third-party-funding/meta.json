@@ -1,0 +1,15 @@
+{
+  "id": "third-party-funding",
+  "order": 2,
+  "value": 14.2,
+  "unit": "M EUR",
+  "delta": "+1.4",
+  "label": {
+    "de": "Drittmittel",
+    "en": "Third-party funding"
+  },
+  "description": {
+    "de": "Bewilligte Foerdermittel in Mio. EUR",
+    "en": "Approved external funding in million EUR"
+  }
+}

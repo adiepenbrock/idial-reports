@@ -1,0 +1,9 @@
+{
+  "id": "partner-data-governance-institute",
+  "order": 2,
+  "name": "Data Governance Institute",
+  "contribution": {
+    "de": "Co-Entwicklung von Governance-Rahmen fuer vertrauenswuerdige Datennutzung.",
+    "en": "Co-development of governance frameworks for trustworthy data use."
+  }
+}

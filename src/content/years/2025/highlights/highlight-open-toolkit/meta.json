@@ -1,0 +1,13 @@
+{
+  "id": "highlight-open-toolkit",
+  "order": 2,
+  "title": {
+    "de": "Open Toolkit veroeffentlicht",
+    "en": "Open toolkit released"
+  },
+  "detail": {
+    "de": "Die Werkzeugkette beschleunigt Reproduzierbarkeit und kollaborative Entwicklung.",
+    "en": "The toolkit accelerates reproducibility and collaborative development."
+  },
+  "tags": ["open-science", "infrastructure", "research", "knowledge-transfer"]
+}

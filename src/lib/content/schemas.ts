@@ -22,44 +22,24 @@ export const yearMetaSchema = z.object({
   }),
 })
 
-const kpiSchema = z.object({
-  id: z.string().trim().min(1),
-  label: localizedTextSchema,
-  description: localizedTextSchema,
-  value: z.number(),
-  unit: z.string().trim().min(1).optional(),
-  delta: z.string().trim().min(1),
-})
+// ── Per-item meta schemas ──────────────────────────────────────────────────
 
-const chartPointSchema = z.object({
+export const articleMetaSchema = z.object({
   id: z.string().trim().min(1),
-  label: localizedTextSchema,
-  value: z.number(),
-})
-
-const chartSchema = z.object({
-  id: z.string().trim().min(1),
-  title: localizedTextSchema,
-  description: localizedTextSchema,
-  unit: z.string().trim().min(1).optional(),
-  points: z.array(chartPointSchema).min(2),
-})
-
-const articleSchema = z.object({
-  id: z.string().trim().min(1),
+  order: z.number().int().min(1),
+  author: z.string().trim().min(1),
   title: localizedTextSchema,
   teaser: localizedTextSchema,
-  author: z.string().trim().min(1),
 })
 
-const projectPartnerSchema = z.object({
+export const projectPartnerSchema = z.object({
   name: z.string().trim().min(1),
   role: localizedTextSchema.optional(),
   logoUrl: z.string().trim().min(1).optional(),
   url: z.string().trim().min(1).optional(),
 })
 
-const projectFundingSchema = z.object({
+export const projectFundingSchema = z.object({
   source: z.string().trim().min(1),
   programme: z.string().trim().min(1).optional(),
   amount: z.string().trim().min(1).optional(),
@@ -68,52 +48,90 @@ const projectFundingSchema = z.object({
   projectNumber: z.string().trim().min(1).optional(),
 })
 
-const projectLinkSchema = z.object({
+export const projectLinkSchema = z.object({
   label: localizedTextSchema,
   url: z.string().trim().min(1),
 })
 
-const projectSchema = z.object({
+export const projectTeamMemberSchema = z.object({
+  name: z.string().trim().min(1),
+  role: localizedTextSchema,
+  avatarUrl: z.string().trim().min(1).optional(),
+})
+
+export const projectMetaSchema = z.object({
   id: z.string().trim().min(1),
+  order: z.number().int().min(1),
   title: localizedTextSchema,
   summary: localizedTextSchema,
-  body: localizedTextSchema.optional(),
   status: localizedTextSchema,
   funding: projectFundingSchema.optional(),
   partners: z.array(projectPartnerSchema).optional(),
   links: z.array(projectLinkSchema).optional(),
+  team: z.array(projectTeamMemberSchema).optional(),
 })
 
-const highlightSchema = z.object({
+export const highlightMetaSchema = z.object({
   id: z.string().trim().min(1),
+  order: z.number().int().min(1),
   title: localizedTextSchema,
   detail: localizedTextSchema,
-  body: localizedTextSchema.optional(),
   tags: z.array(z.string().trim().min(1)).optional(),
 })
 
-const partnerSchema = z.object({
+export const cooperationPartnerMetaSchema = z.object({
   id: z.string().trim().min(1),
+  order: z.number().int().min(1),
   name: z.string().trim().min(1),
   contribution: localizedTextSchema,
 })
 
-export const yearDataSchema = z.object({
+export const kpiMetaSchema = z.object({
+  id: z.string().trim().min(1),
+  order: z.number().int().min(1),
+  value: z.number(),
+  unit: z.string().trim().min(1).optional(),
+  delta: z.string().trim().min(1),
+  label: localizedTextSchema,
+  description: localizedTextSchema,
+})
+
+const chartPointSchema = z.object({
+  id: z.string().trim().min(1),
+  label: localizedTextSchema,
+  value: z.number(),
+})
+
+export const chartMetaSchema = z.object({
+  id: z.string().trim().min(1),
+  order: z.number().int().min(1),
+  title: localizedTextSchema,
+  description: localizedTextSchema,
+  unit: z.string().trim().min(1).optional(),
+  points: z.array(chartPointSchema).min(2),
+})
+
+export const timelineEventMetaSchema = z.object({
+  id: z.string().trim().min(1),
+  order: z.number().int().min(1),
+  title: localizedTextSchema,
+  description: localizedTextSchema,
+  type: z.enum(['launch', 'publication', 'award', 'milestone', 'partnership', 'conference']).optional(),
+})
+
+// ── Assembled year data schema (produced by the loader, not read from disk) ─
+
+export const resolvedYearDataSchema = z.object({
   stats: z.object({
-    kpis: z.array(kpiSchema).min(1),
-    charts: z.array(chartSchema).min(1),
+    kpis: z.array(kpiMetaSchema.omit({ order: true })).min(1),
+    charts: z.array(chartMetaSchema.omit({ order: true })).min(1),
   }),
-  articles: z.array(articleSchema).min(1),
-  projects: z.array(projectSchema).min(1),
-  highlights: z.array(highlightSchema).min(1),
-  cooperationPartners: z.array(partnerSchema).min(1),
+  articles: z.array(articleMetaSchema.omit({ order: true })).min(1),
+  projects: z.array(projectMetaSchema.omit({ order: true })).min(1),
+  highlights: z.array(highlightMetaSchema.omit({ order: true })).min(1),
+  cooperationPartners: z.array(cooperationPartnerMetaSchema.omit({ order: true })).min(1),
   timeline: z.array(z.object({
     month: z.number().int().min(1).max(12),
-    events: z.array(z.object({
-      id: z.string().trim().min(1),
-      title: localizedTextSchema,
-      description: localizedTextSchema,
-      type: z.enum(['launch', 'publication', 'award', 'milestone', 'partnership', 'conference']).optional(),
-    })).min(1),
+    events: z.array(timelineEventMetaSchema.omit({ order: true })).min(1),
   })).optional(),
 })

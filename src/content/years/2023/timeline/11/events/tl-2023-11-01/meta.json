@@ -1,0 +1,13 @@
+{
+  "id": "tl-2023-11-01",
+  "order": 1,
+  "type": "publication",
+  "title": {
+    "de": "Open-Science-Rahmen veroeffentlicht",
+    "en": "Open science framework published"
+  },
+  "description": {
+    "de": "Reproduzierbarkeitsleitfaden und gemeinsame Werkzeuge unter CC-BY lizenziert.",
+    "en": "Reproducibility guidelines and shared tools released under CC-BY licence."
+  }
+}

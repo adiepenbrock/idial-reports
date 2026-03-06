@@ -1,0 +1,19 @@
+{
+  "id": "impact-score",
+  "order": 1,
+  "unit": "Score",
+  "title": {
+    "de": "Impact-Score pro Quartal",
+    "en": "Quarterly impact score"
+  },
+  "description": {
+    "de": "Index aus Wissenstransfer, Publikationsreichweite und Umsetzungsprojekten.",
+    "en": "Index combining knowledge transfer, publication reach, and implementation pilots."
+  },
+  "points": [
+    { "id": "q1", "label": { "de": "Q1", "en": "Q1" }, "value": 78 },
+    { "id": "q2", "label": { "de": "Q2", "en": "Q2" }, "value": 86 },
+    { "id": "q3", "label": { "de": "Q3", "en": "Q3" }, "value": 93 },
+    { "id": "q4", "label": { "de": "Q4", "en": "Q4" }, "value": 101 }
+  ]
+}

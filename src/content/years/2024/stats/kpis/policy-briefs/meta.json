@@ -1,0 +1,14 @@
+{
+  "id": "policy-briefs",
+  "order": 3,
+  "value": 24,
+  "delta": "+8",
+  "label": {
+    "de": "Policy Briefs",
+    "en": "Policy briefs"
+  },
+  "description": {
+    "de": "Evidenzbasierte Handlungsempfehlungen fuer Entscheidungstraeger",
+    "en": "Evidence-based recommendations for decision makers"
+  }
+}

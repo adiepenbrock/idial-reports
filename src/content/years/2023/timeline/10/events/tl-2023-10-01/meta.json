@@ -1,0 +1,13 @@
+{
+  "id": "tl-2023-10-01",
+  "order": 1,
+  "type": "conference",
+  "title": {
+    "de": "Open-Science-Konferenz Berlin",
+    "en": "Open Science conference Berlin"
+  },
+  "description": {
+    "de": "Institut praesentiertReproduzierbarkeitsstrategie vor internationalen Fachgruppen.",
+    "en": "Institute presents reproducibility strategy to international working groups."
+  }
+}

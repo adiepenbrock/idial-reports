@@ -1,0 +1,9 @@
+{
+  "id": "partner-urban-lab",
+  "order": 3,
+  "name": "Urban Systems Lab",
+  "contribution": {
+    "de": "Nutzungsdaten und Co-Design-Workshops fuer kommunale Anwendungen.",
+    "en": "Usage data and co-design workshops for municipal applications."
+  }
+}

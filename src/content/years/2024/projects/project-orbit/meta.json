@@ -1,0 +1,72 @@
+{
+  "id": "project-orbit",
+  "order": 2,
+  "title": {
+    "de": "Projekt Orbit",
+    "en": "Project Orbit"
+  },
+  "summary": {
+    "de": "Interaktive Transferplattform fuer evidenzbasierte Verwaltungsprozesse.",
+    "en": "Interactive transfer platform for evidence-based administrative workflows."
+  },
+  "status": {
+    "de": "Pilotphase",
+    "en": "Pilot phase"
+  },
+  "funding": {
+    "source": "Federal Ministry of Interior (BMI)",
+    "programme": "Digitale Verwaltung 2025",
+    "amount": "€ 680,000",
+    "period": "2023–2025",
+    "projectNumber": "IDF-2023-017"
+  },
+  "partners": [
+    {
+      "name": "Urban Systems Lab",
+      "role": { "de": "Co-Design-Partner", "en": "Co-design partner" },
+      "url": "https://urban-systems.example.org"
+    },
+    {
+      "name": "Wegweiser Institut",
+      "role": { "de": "Beratungspartner", "en": "Advisory partner" },
+      "url": "https://wegweiser.example.de"
+    },
+    {
+      "name": "City of Hamburg",
+      "role": { "de": "Pilotkommune", "en": "Pilot municipality" }
+    },
+    {
+      "name": "Govtech Hub Berlin",
+      "role": { "de": "Innovationspartner", "en": "Innovation partner" },
+      "url": "https://govtech-hub.example.de"
+    }
+  ],
+  "team": [
+    {
+      "name": "Dr. Felix Wagner",
+      "role": { "de": "Projektleitung", "en": "Project lead" }
+    },
+    {
+      "name": "Sophie Engel",
+      "role": { "de": "UX & Co-Design", "en": "UX & co-design" }
+    },
+    {
+      "name": "Tim Krause",
+      "role": { "de": "Backend-Entwicklung", "en": "Backend development" }
+    },
+    {
+      "name": "Petra Wolf",
+      "role": { "de": "Verwaltungsforschung", "en": "Public administration research" }
+    }
+  ],
+  "links": [
+    {
+      "label": { "de": "Plattform-Demo", "en": "Platform demo" },
+      "url": "https://orbit-demo.example.de"
+    },
+    {
+      "label": { "de": "BMI-Pressemitteilung", "en": "BMI press release" },
+      "url": "https://bmi.example.de/presse/orbit-2024"
+    }
+  ]
+}

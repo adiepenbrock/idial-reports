@@ -1,0 +1,13 @@
+{
+  "id": "highlight-award",
+  "order": 1,
+  "title": {
+    "de": "Auszeichnung fuer datenethische Leitlinien",
+    "en": "Award for data ethics guidelines"
+  },
+  "detail": {
+    "de": "Unser institutsweites Framework wurde als Best Practice im Verbundprogramm anerkannt.",
+    "en": "Our institute-wide framework was recognized as a best practice in the consortium program."
+  },
+  "tags": ["awards", "open-science", "data-ethics", "research"]
+}

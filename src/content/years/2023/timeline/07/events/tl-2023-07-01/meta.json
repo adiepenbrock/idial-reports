@@ -1,0 +1,13 @@
+{
+  "id": "tl-2023-07-01",
+  "order": 1,
+  "type": "milestone",
+  "title": {
+    "de": "DFG-Projekt Pulse abgeschlossen",
+    "en": "DFG Project Pulse completed"
+  },
+  "description": {
+    "de": "Hochfrequenz-Sensorpipeline erfolgreich validiert; Ergebnisse oeffentlich zugaenglich.",
+    "en": "High-frequency sensor pipeline successfully validated; results publicly available."
+  }
+}

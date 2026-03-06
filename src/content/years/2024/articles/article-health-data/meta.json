@@ -1,0 +1,13 @@
+{
+  "id": "article-health-data",
+  "order": 2,
+  "author": "Dr. Jonas Hartmann",
+  "title": {
+    "de": "Forschungsdaten sicher teilen",
+    "en": "Secure sharing for research data"
+  },
+  "teaser": {
+    "de": "Neue Governance-Muster verbinden Datenschutz, Nutzbarkeit und internationale Kooperation.",
+    "en": "New governance patterns connect privacy, usability, and international collaboration."
+  }
+}

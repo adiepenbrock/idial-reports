@@ -1,0 +1,13 @@
+{
+  "id": "tl-2024-10-01",
+  "order": 1,
+  "type": "conference",
+  "title": {
+    "de": "Jahreskonferenz Wissenstransfer",
+    "en": "Annual knowledge transfer conference"
+  },
+  "description": {
+    "de": "Institute aus sieben Laendern diskutieren Transfermodelle und praesentieren Pilotresultate.",
+    "en": "Institutes from seven countries discuss transfer models and present pilot outcomes."
+  }
+}

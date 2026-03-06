@@ -1,6 +1,7 @@
 import { Link, createFileRoute, getRouteApi } from '@tanstack/react-router'
 import { motion, useReducedMotion } from 'motion/react'
 import Reveal from '#/components/motion/Reveal'
+import { getBodyComponent } from '#/lib/content/loadReports'
 
 const yearRoute = getRouteApi('/$locale/report/$year')
 
@@ -110,13 +111,16 @@ function ProjectDetailPage() {
           </div>
         </Reveal>
 
-        {project.body ? (
-          <Reveal delay={0.09}>
-            <article className="article-content project-body">
-              <p className="project-body-text">{project.body[contentLocale]}</p>
-            </article>
-          </Reveal>
-        ) : null}
+        {(() => {
+          const BodyComponent = getBodyComponent(report.year, 'projects', projectId, contentLocale)
+          return BodyComponent ? (
+            <Reveal delay={0.09}>
+              <article className="article-content project-body">
+                <div className="project-body-prose"><BodyComponent /></div>
+              </article>
+            </Reveal>
+          ) : null
+        })()}
 
         {/* External links */}
         {project.links && project.links.length > 0 ? (
@@ -250,6 +254,41 @@ function ProjectDetailPage() {
           ) : null}
 
         </div>
+
+        {/* ── Team ── */}
+        {project.team && project.team.length > 0 ? (
+          <Reveal delay={0.14}>
+            <section className="project-team-section" aria-label={dictionary.projectTeamLabel}>
+              <p className="meta-label project-team-label">{dictionary.projectTeamLabel}</p>
+              <ul className="project-team-grid">
+                {project.team.map((member) => {
+                  const initials = member.name
+                    .trim()
+                    .split(/\s+/)
+                    .filter((w) => w.length > 0)
+                    .slice(0, 2)
+                    .map((w) => w[0].toUpperCase())
+                    .join('')
+                  return (
+                    <li key={member.name} className="team-member-card">
+                      <div className="team-member-avatar" aria-hidden="true">
+                        {member.avatarUrl ? (
+                          <img src={member.avatarUrl} alt={member.name} className="team-member-avatar-img" />
+                        ) : (
+                          <span className="team-member-initials">{initials}</span>
+                        )}
+                      </div>
+                      <div className="team-member-info">
+                        <p className="team-member-name">{member.name}</p>
+                        <p className="team-member-role">{member.role[contentLocale]}</p>
+                      </div>
+                    </li>
+                  )
+                })}
+              </ul>
+            </section>
+          </Reveal>
+        ) : null}
 
         {/* ── Related projects ── */}
         {related.length > 0 ? (

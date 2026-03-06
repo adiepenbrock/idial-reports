@@ -1,0 +1,14 @@
+{
+  "id": "active-projects",
+  "order": 2,
+  "value": 29,
+  "delta": "+5",
+  "label": {
+    "de": "Aktive Projekte",
+    "en": "Active projects"
+  },
+  "description": {
+    "de": "Laufende Vorhaben mit externer oder interner Finanzierung",
+    "en": "Ongoing projects with external or internal funding"
+  }
+}

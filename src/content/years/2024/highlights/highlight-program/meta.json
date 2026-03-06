@@ -1,0 +1,13 @@
+{
+  "id": "highlight-program",
+  "order": 1,
+  "title": {
+    "de": "Neues Nachwuchsprogramm gestartet",
+    "en": "New early-career program launched"
+  },
+  "detail": {
+    "de": "Ein institutsweites Programm foerdert translationale Forschung in interdisziplinaeren Teams.",
+    "en": "An institute-wide program supports translational research in interdisciplinary teams."
+  },
+  "tags": ["research", "awards", "interdisciplinary", "early-career"]
+}

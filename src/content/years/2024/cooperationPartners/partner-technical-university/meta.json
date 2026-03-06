@@ -1,0 +1,9 @@
+{
+  "id": "partner-technical-university",
+  "order": 2,
+  "name": "Technical University Munich",
+  "contribution": {
+    "de": "Gemeinsame Doktorandenkollegs und Methodenentwicklung.",
+    "en": "Joint doctoral tracks and methodological development."
+  }
+}

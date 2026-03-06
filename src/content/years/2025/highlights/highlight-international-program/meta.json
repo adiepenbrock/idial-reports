@@ -1,0 +1,13 @@
+{
+  "id": "highlight-international-program",
+  "order": 1,
+  "title": {
+    "de": "Internationales Programm etabliert",
+    "en": "International program established"
+  },
+  "detail": {
+    "de": "Ein neues Programm vernetzt Forschungsteams in fuenf Laendern mit gemeinsamem Methodenstandard.",
+    "en": "A new program connects research teams across five countries with a shared methods standard."
+  },
+  "tags": ["research", "international", "open-science", "infrastructure"]
+}

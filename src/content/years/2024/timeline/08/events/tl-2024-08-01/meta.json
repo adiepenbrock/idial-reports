@@ -1,0 +1,13 @@
+{
+  "id": "tl-2024-08-01",
+  "order": 1,
+  "type": "publication",
+  "title": {
+    "de": "Veroeffentlichung: Robuste Energienetze",
+    "en": "Publication: resilient energy networks"
+  },
+  "description": {
+    "de": "Dr. Helena Voss praesentiert Lastspitzenprognosemodell auf der IEEE Power & Energy Society.",
+    "en": "Dr. Helena Voss presents peak-load forecasting model at IEEE Power & Energy Society."
+  }
+}

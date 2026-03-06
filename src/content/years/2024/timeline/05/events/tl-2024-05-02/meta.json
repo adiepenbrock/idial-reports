@@ -1,0 +1,13 @@
+{
+  "id": "tl-2024-05-02",
+  "order": 2,
+  "type": "milestone",
+  "title": {
+    "de": "Infrastruktur-Modernisierung abgeschlossen",
+    "en": "Infrastructure modernization completed"
+  },
+  "description": {
+    "de": "Containerisierte Pipelines und Cloud-Migration reduzieren Analysezeiten um 61 Prozent.",
+    "en": "Containerized pipelines and cloud migration reduce analysis cycle times by 61 percent."
+  }
+}

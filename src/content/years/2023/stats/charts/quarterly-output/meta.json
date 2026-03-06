@@ -1,0 +1,19 @@
+{
+  "id": "quarterly-output",
+  "order": 1,
+  "unit": "Index",
+  "title": {
+    "de": "Quartalsweise Forschungsleistung",
+    "en": "Quarterly research output"
+  },
+  "description": {
+    "de": "Kombinierter Index aus Publikationen, Open-Source-Betraegen und Pilotprojekten.",
+    "en": "Combined index of publications, open-source contributions, and pilot projects."
+  },
+  "points": [
+    { "id": "q1", "label": { "de": "Q1", "en": "Q1" }, "value": 72 },
+    { "id": "q2", "label": { "de": "Q2", "en": "Q2" }, "value": 79 },
+    { "id": "q3", "label": { "de": "Q3", "en": "Q3" }, "value": 88 },
+    { "id": "q4", "label": { "de": "Q4", "en": "Q4" }, "value": 94 }
+  ]
+}

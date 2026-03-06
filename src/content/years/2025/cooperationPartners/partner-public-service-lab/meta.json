@@ -1,0 +1,9 @@
+{
+  "id": "partner-public-service-lab",
+  "order": 3,
+  "name": "Public Service Lab",
+  "contribution": {
+    "de": "Transferpfade in kommunale Anwendungen und Qualifizierung von Multiplikatoren.",
+    "en": "Transfer pathways into municipal applications and multiplier training."
+  }
+}

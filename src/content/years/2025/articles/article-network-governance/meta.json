@@ -1,0 +1,13 @@
+{
+  "id": "article-network-governance",
+  "order": 1,
+  "author": "Prof. Adrian Keller",
+  "title": {
+    "de": "Netzwerk-Governance fuer kooperative Forschung",
+    "en": "Network governance for cooperative research"
+  },
+  "teaser": {
+    "de": "Ein belastbares Betriebsmodell verbindet wissenschaftliche Freiheit mit verlässlicher Steuerung.",
+    "en": "A durable operating model balances scientific autonomy and reliable coordination."
+  }
+}

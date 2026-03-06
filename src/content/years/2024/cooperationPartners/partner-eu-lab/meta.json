@@ -1,0 +1,9 @@
+{
+  "id": "partner-eu-lab",
+  "order": 1,
+  "name": "EU Living Lab Alliance",
+  "contribution": {
+    "de": "Bereitstellung von Reallabor-Umgebungen fuer transnationale Pilotprojekte.",
+    "en": "Provision of living-lab environments for cross-border pilot projects."
+  }
+}

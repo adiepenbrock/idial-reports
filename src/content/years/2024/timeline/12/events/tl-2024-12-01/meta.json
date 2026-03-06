@@ -1,0 +1,13 @@
+{
+  "id": "tl-2024-12-01",
+  "order": 1,
+  "type": "milestone",
+  "title": {
+    "de": "Orbit-Pilotphase erfolgreich abgeschlossen",
+    "en": "Orbit pilot phase successfully completed"
+  },
+  "description": {
+    "de": "Transferplattform fuer Verwaltung erreicht alle Pilotmeilensteine; Rollout fuer 2025 geplant.",
+    "en": "Administrative transfer platform meets all pilot milestones; rollout planned for 2025."
+  }
+}

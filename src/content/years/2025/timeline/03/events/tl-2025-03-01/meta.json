@@ -1,0 +1,13 @@
+{
+  "id": "tl-2025-03-01",
+  "order": 1,
+  "type": "launch",
+  "title": {
+    "de": "Open Toolkit auf GitHub veroeffentlicht",
+    "en": "Open Toolkit released on GitHub"
+  },
+  "description": {
+    "de": "Zehn Werkzeuge und Bibliotheken unter MIT-Lizenz; 1.200 Stars in den ersten 90 Tagen.",
+    "en": "Ten tools and libraries under MIT licence; 1,200 GitHub stars in the first 90 days."
+  }
+}

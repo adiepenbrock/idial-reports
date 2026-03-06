@@ -1,0 +1,14 @@
+{
+  "id": "prototype-adoptions",
+  "order": 3,
+  "value": 31,
+  "delta": "+10",
+  "label": {
+    "de": "Prototyp-Uebernahmen",
+    "en": "Prototype adoptions"
+  },
+  "description": {
+    "de": "Produktive Uebernahmen in Partnerorganisationen",
+    "en": "Production-grade adoptions by partner organizations"
+  }
+}

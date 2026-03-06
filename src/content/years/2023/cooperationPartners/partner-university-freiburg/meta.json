@@ -1,0 +1,9 @@
+{
+  "id": "partner-university-freiburg",
+  "order": 2,
+  "name": "University of Freiburg",
+  "contribution": {
+    "de": "Methodenentwicklung fuer kausale Modellierung.",
+    "en": "Method development for causal modeling."
+  }
+}

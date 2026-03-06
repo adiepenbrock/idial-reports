@@ -1,0 +1,14 @@
+{
+  "id": "publications",
+  "order": 1,
+  "value": 136,
+  "delta": "+15%",
+  "label": {
+    "de": "Publikationen",
+    "en": "Publications"
+  },
+  "description": {
+    "de": "Veroeffentlichte wissenschaftliche Arbeiten",
+    "en": "Published scientific outputs"
+  }
+}

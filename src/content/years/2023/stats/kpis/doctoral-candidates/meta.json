@@ -1,0 +1,14 @@
+{
+  "id": "doctoral-candidates",
+  "order": 3,
+  "value": 67,
+  "delta": "+6",
+  "label": {
+    "de": "Promovierende",
+    "en": "Doctoral candidates"
+  },
+  "description": {
+    "de": "Aktive Doktorandinnen und Doktoranden",
+    "en": "Active doctoral researchers"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "tl-2023-04-01",
+  "order": 1,
+  "type": "publication",
+  "title": {
+    "de": "Veroeffentlichung: Wissensgraphen und Stadtplanung",
+    "en": "Publication: knowledge graphs for urban planning"
+  },
+  "description": {
+    "de": "Beitrag von Dr. Mara Stein in Nature Cities verbindet Geodaten mit sozialen Indikatoren.",
+    "en": "Dr. Mara Stein's contribution in Nature Cities links geospatial data with social indicators."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "project-atlas",
+  "order": 1,
+  "title": {
+    "de": "Projekt Atlas",
+    "en": "Project Atlas"
+  },
+  "summary": {
+    "de": "Koordinierte Datenintegration fuer regionale Klima- und Gesundheitsanalysen.",
+    "en": "Coordinated data integration for regional climate and health analysis."
+  },
+  "status": {
+    "de": "Skalierung",
+    "en": "Scaling"
+  },
+  "funding": {
+    "source": "European Commission",
+    "programme": "Horizon Europe",
+    "amount": "€ 1,200,000",
+    "period": "2022–2025",
+    "grantId": "GA 101019803",
+    "projectNumber": "IDF-2022-031"
+  },
+  "partners": [
+    {
+      "name": "EU Living Lab Alliance",
+      "role": { "de": "Leadpartner", "en": "Lead partner" },
+      "url": "https://eu-livinglab.example.eu"
+    },
+    {
+      "name": "Technical University Munich",
+      "role": { "de": "Forschungspartner", "en": "Research partner" },
+      "url": "https://tum.example.de"
+    },
+    {
+      "name": "Urban Systems Lab",
+      "role": { "de": "Implementierungspartner", "en": "Implementation partner" },
+      "url": "https://urban-systems.example.org"
+    },
+    {
+      "name": "OECD Policy Lab",
+      "role": { "de": "Politikberatungspartner", "en": "Policy partner" },
+      "url": "https://oecd-policylab.example.org"
+    },
+    {
+      "name": "Municipality of Amsterdam",
+      "role": { "de": "Kommunaler Anwendungspartner", "en": "Municipal application partner" }
+    },
+    {
+      "name": "KIT Karlsruhe",
+      "role": { "de": "Wissenschaftspartner", "en": "Research partner" },
+      "url": "https://kit.example.de"
+    }
+  ],
+  "team": [
+    {
+      "name": "Prof. Dr. Sarah Richter",
+      "role": { "de": "Projektleitung & wissenschaftliche Koordination", "en": "Project lead & scientific coordination" }
+    },
+    {
+      "name": "David Schneider",
+      "role": { "de": "Datenintegration", "en": "Data integration" }
+    },
+    {
+      "name": "Clara Voigt",
+      "role": { "de": "Klimamodellierung", "en": "Climate modelling" }
+    },
+    {
+      "name": "Lukas Braun",
+      "role": { "de": "Systemarchitektur", "en": "Systems architecture" }
+    },
+    {
+      "name": "Nora Hoffmann",
+      "role": { "de": "Gesundheitsdatenanalyse", "en": "Health data analysis" }
+    }
+  ],
+  "links": [
+    {
+      "label": { "de": "Projektwebsite (Horizon Europe)", "en": "Project website (Horizon Europe)" },
+      "url": "https://atlas-project.example.eu"
+    },
+    {
+      "label": { "de": "Datenstandarddokumentation", "en": "Data standard documentation" },
+      "url": "https://atlas-project.example.eu/docs/standards"
+    },
+    {
+      "label": { "de": "Ergebniskonferenz 2024", "en": "Results conference 2024" },
+      "url": "https://atlas-conference.example.eu/2024"
+    },
+    {
+      "label": { "de": "Open-Data-Portal", "en": "Open data portal" },
+      "url": "https://atlas-data.example.eu"
+    }
+  ]
+}

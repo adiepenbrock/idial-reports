@@ -1,0 +1,13 @@
+{
+  "id": "highlight-infra",
+  "order": 2,
+  "title": {
+    "de": "Recheninfrastruktur modernisiert",
+    "en": "Computing infrastructure modernized"
+  },
+  "detail": {
+    "de": "Neue Compute-Pipelines verkuerzen Analysezyklen und steigern Reproduzierbarkeit.",
+    "en": "New compute pipelines reduce analysis cycle times and improve reproducibility."
+  },
+  "tags": ["infrastructure", "open-science", "reproducibility", "research"]
+}

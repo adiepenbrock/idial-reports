@@ -1,0 +1,13 @@
+{
+  "id": "article-energy-network",
+  "order": 1,
+  "author": "Dr. Helena Voss",
+  "title": {
+    "de": "Robuste Energienetze in urbanen Verdichtungsraeumen",
+    "en": "Resilient energy networks in dense urban regions"
+  },
+  "teaser": {
+    "de": "Ein Modell fuer Lastspitzenprognosen verbessert die Planung kritischer Infrastruktur.",
+    "en": "A peak-load forecasting model improves planning for critical infrastructure."
+  }
+}

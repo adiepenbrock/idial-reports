@@ -1,0 +1,13 @@
+{
+  "id": "tl-2023-09-01",
+  "order": 1,
+  "type": "award",
+  "title": {
+    "de": "Auszeichnung Datenethik-Framework",
+    "en": "Data ethics framework award"
+  },
+  "description": {
+    "de": "Nationale Forschungsgemeinschaft zeichnet institutsweites Framework als Best Practice aus.",
+    "en": "National Research Community recognizes institute-wide framework as best practice."
+  }
+}
