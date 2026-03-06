@@ -2323,3 +2323,92 @@ button:focus-visible {
   color: var(--ink-muted);
   line-height: 1.5;
 }
+
+/* ════════════════════════════════════════════════════════════
+   PROJECT TEAM SECTION
+════════════════════════════════════════════════════════════ */
+
+.project-team-section {
+  margin-bottom: 2.5rem;
+}
+
+.project-team-label {
+  color: var(--ink-faint);
+  letter-spacing: 0.14em;
+  margin-bottom: 1.1rem;
+}
+
+.project-team-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.team-member-card {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.85rem 1rem;
+  background: var(--page-panel);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.team-member-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent-dim);
+}
+
+.team-member-avatar {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--ink-band) 0%, var(--ink-band-2) 100%);
+  border: 2px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.team-member-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member-initials {
+  font-family: "Sora", var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--light-1);
+}
+
+.team-member-info {
+  min-width: 0;
+}
+
+.team-member-name {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.team-member-role {
+  margin: 0.15rem 0 0;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  line-height: 1.35;
+}
