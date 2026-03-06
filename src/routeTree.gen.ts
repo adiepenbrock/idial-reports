@@ -13,6 +13,10 @@ import { Route as LocaleRouteRouteImport } from './routes/$locale/route'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as LocaleIndexRouteImport } from './routes/$locale/index'
 import { Route as LocaleReportYearRouteImport } from './routes/$locale/report/$year'
+import { Route as LocaleReportYearIndexRouteImport } from './routes/$locale/report/$year/index'
+import { Route as LocaleReportYearProjectProjectIdRouteImport } from './routes/$locale/report/$year/project/$projectId'
+import { Route as LocaleReportYearHighlightHighlightIdRouteImport } from './routes/$locale/report/$year/highlight/$highlightId'
+import { Route as LocaleReportYearArticleArticleIdRouteImport } from './routes/$locale/report/$year/article/$articleId'
 
 const LocaleRouteRoute = LocaleRouteRouteImport.update({
   id: '/$locale',
@@ -34,31 +38,88 @@ const LocaleReportYearRoute = LocaleReportYearRouteImport.update({
   path: '/report/$year',
   getParentRoute: () => LocaleRouteRoute,
 } as any)
+const LocaleReportYearIndexRoute = LocaleReportYearIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => LocaleReportYearRoute,
+} as any)
+const LocaleReportYearProjectProjectIdRoute =
+  LocaleReportYearProjectProjectIdRouteImport.update({
+    id: '/project/$projectId',
+    path: '/project/$projectId',
+    getParentRoute: () => LocaleReportYearRoute,
+  } as any)
+const LocaleReportYearHighlightHighlightIdRoute =
+  LocaleReportYearHighlightHighlightIdRouteImport.update({
+    id: '/highlight/$highlightId',
+    path: '/highlight/$highlightId',
+    getParentRoute: () => LocaleReportYearRoute,
+  } as any)
+const LocaleReportYearArticleArticleIdRoute =
+  LocaleReportYearArticleArticleIdRouteImport.update({
+    id: '/article/$articleId',
+    path: '/article/$articleId',
+    getParentRoute: () => LocaleReportYearRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/$locale': typeof LocaleRouteRouteWithChildren
   '/$locale/': typeof LocaleIndexRoute
-  '/$locale/report/$year': typeof LocaleReportYearRoute
+  '/$locale/report/$year': typeof LocaleReportYearRouteWithChildren
+  '/$locale/report/$year/': typeof LocaleReportYearIndexRoute
+  '/$locale/report/$year/article/$articleId': typeof LocaleReportYearArticleArticleIdRoute
+  '/$locale/report/$year/highlight/$highlightId': typeof LocaleReportYearHighlightHighlightIdRoute
+  '/$locale/report/$year/project/$projectId': typeof LocaleReportYearProjectProjectIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/$locale': typeof LocaleIndexRoute
-  '/$locale/report/$year': typeof LocaleReportYearRoute
+  '/$locale/report/$year': typeof LocaleReportYearIndexRoute
+  '/$locale/report/$year/article/$articleId': typeof LocaleReportYearArticleArticleIdRoute
+  '/$locale/report/$year/highlight/$highlightId': typeof LocaleReportYearHighlightHighlightIdRoute
+  '/$locale/report/$year/project/$projectId': typeof LocaleReportYearProjectProjectIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/$locale': typeof LocaleRouteRouteWithChildren
   '/$locale/': typeof LocaleIndexRoute
-  '/$locale/report/$year': typeof LocaleReportYearRoute
+  '/$locale/report/$year': typeof LocaleReportYearRouteWithChildren
+  '/$locale/report/$year/': typeof LocaleReportYearIndexRoute
+  '/$locale/report/$year/article/$articleId': typeof LocaleReportYearArticleArticleIdRoute
+  '/$locale/report/$year/highlight/$highlightId': typeof LocaleReportYearHighlightHighlightIdRoute
+  '/$locale/report/$year/project/$projectId': typeof LocaleReportYearProjectProjectIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/$locale' | '/$locale/' | '/$locale/report/$year'
+  fullPaths:
+    | '/'
+    | '/$locale'
+    | '/$locale/'
+    | '/$locale/report/$year'
+    | '/$locale/report/$year/'
+    | '/$locale/report/$year/article/$articleId'
+    | '/$locale/report/$year/highlight/$highlightId'
+    | '/$locale/report/$year/project/$projectId'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/$locale' | '/$locale/report/$year'
-  id: '__root__' | '/' | '/$locale' | '/$locale/' | '/$locale/report/$year'
+  to:
+    | '/'
+    | '/$locale'
+    | '/$locale/report/$year'
+    | '/$locale/report/$year/article/$articleId'
+    | '/$locale/report/$year/highlight/$highlightId'
+    | '/$locale/report/$year/project/$projectId'
+  id:
+    | '__root__'
+    | '/'
+    | '/$locale'
+    | '/$locale/'
+    | '/$locale/report/$year'
+    | '/$locale/report/$year/'
+    | '/$locale/report/$year/article/$articleId'
+    | '/$locale/report/$year/highlight/$highlightId'
+    | '/$locale/report/$year/project/$projectId'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -96,17 +157,63 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LocaleReportYearRouteImport
       parentRoute: typeof LocaleRouteRoute
     }
+    '/$locale/report/$year/': {
+      id: '/$locale/report/$year/'
+      path: '/'
+      fullPath: '/$locale/report/$year/'
+      preLoaderRoute: typeof LocaleReportYearIndexRouteImport
+      parentRoute: typeof LocaleReportYearRoute
+    }
+    '/$locale/report/$year/project/$projectId': {
+      id: '/$locale/report/$year/project/$projectId'
+      path: '/project/$projectId'
+      fullPath: '/$locale/report/$year/project/$projectId'
+      preLoaderRoute: typeof LocaleReportYearProjectProjectIdRouteImport
+      parentRoute: typeof LocaleReportYearRoute
+    }
+    '/$locale/report/$year/highlight/$highlightId': {
+      id: '/$locale/report/$year/highlight/$highlightId'
+      path: '/highlight/$highlightId'
+      fullPath: '/$locale/report/$year/highlight/$highlightId'
+      preLoaderRoute: typeof LocaleReportYearHighlightHighlightIdRouteImport
+      parentRoute: typeof LocaleReportYearRoute
+    }
+    '/$locale/report/$year/article/$articleId': {
+      id: '/$locale/report/$year/article/$articleId'
+      path: '/article/$articleId'
+      fullPath: '/$locale/report/$year/article/$articleId'
+      preLoaderRoute: typeof LocaleReportYearArticleArticleIdRouteImport
+      parentRoute: typeof LocaleReportYearRoute
+    }
   }
 }
 
+interface LocaleReportYearRouteChildren {
+  LocaleReportYearIndexRoute: typeof LocaleReportYearIndexRoute
+  LocaleReportYearArticleArticleIdRoute: typeof LocaleReportYearArticleArticleIdRoute
+  LocaleReportYearHighlightHighlightIdRoute: typeof LocaleReportYearHighlightHighlightIdRoute
+  LocaleReportYearProjectProjectIdRoute: typeof LocaleReportYearProjectProjectIdRoute
+}
+
+const LocaleReportYearRouteChildren: LocaleReportYearRouteChildren = {
+  LocaleReportYearIndexRoute: LocaleReportYearIndexRoute,
+  LocaleReportYearArticleArticleIdRoute: LocaleReportYearArticleArticleIdRoute,
+  LocaleReportYearHighlightHighlightIdRoute:
+    LocaleReportYearHighlightHighlightIdRoute,
+  LocaleReportYearProjectProjectIdRoute: LocaleReportYearProjectProjectIdRoute,
+}
+
+const LocaleReportYearRouteWithChildren =
+  LocaleReportYearRoute._addFileChildren(LocaleReportYearRouteChildren)
+
 interface LocaleRouteRouteChildren {
   LocaleIndexRoute: typeof LocaleIndexRoute
-  LocaleReportYearRoute: typeof LocaleReportYearRoute
+  LocaleReportYearRoute: typeof LocaleReportYearRouteWithChildren
 }
 
 const LocaleRouteRouteChildren: LocaleRouteRouteChildren = {
   LocaleIndexRoute: LocaleIndexRoute,
-  LocaleReportYearRoute: LocaleReportYearRoute,
+  LocaleReportYearRoute: LocaleReportYearRouteWithChildren,
 }
 
 const LocaleRouteRouteWithChildren = LocaleRouteRoute._addFileChildren(

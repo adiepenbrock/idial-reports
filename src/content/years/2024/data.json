@@ -127,10 +127,71 @@
         "de": "Koordinierte Datenintegration fuer regionale Klima- und Gesundheitsanalysen.",
         "en": "Coordinated data integration for regional climate and health analysis."
       },
+      "body": {
+        "de": "Projekt Atlas schafft eine koordinierte Dateninfrastruktur, die regionale Klima- und Gesundheitsdaten aus sechs europaeischen Partnerregionen zusammenfuehrt. Die Integration heterogener Datenquellen — von kommunalen Gesundheitsregistern bis zu Copernicus-Satellitendaten — erfolgt ueber standardisierte Schnittstellen und ein gemeinsames ontologisches Modell. Im Skalierungsjahr 2024 wurde die Plattform auf drei weitere Regionen ausgedehnt und erstmals eine gemeinsame Analysepublikation mit allen Konsortialpartnern eingereicht. Die Architektur ist als europaischer Standard fuer vernetzte Klimagesundheitsforschung angedacht.",
+        "en": "Project Atlas builds a coordinated data infrastructure that brings together regional climate and health data from six European partner regions. Integration of heterogeneous data sources — from municipal health registers to Copernicus satellite data — is achieved through standardised interfaces and a shared ontological model. In the 2024 scaling year, the platform was extended to three additional regions and a joint analysis publication with all consortium partners was submitted for the first time. The architecture is intended as a European standard for networked climate health research."
+      },
       "status": {
         "de": "Skalierung",
         "en": "Scaling"
-      }
+      },
+      "links": [
+        {
+          "label": { "de": "Projektwebsite (Horizon Europe)", "en": "Project website (Horizon Europe)" },
+          "url": "https://atlas-project.example.eu"
+        },
+        {
+          "label": { "de": "Datenstandarddokumentation", "en": "Data standard documentation" },
+          "url": "https://atlas-project.example.eu/docs/standards"
+        },
+        {
+          "label": { "de": "Ergebniskonferenz 2024", "en": "Results conference 2024" },
+          "url": "https://atlas-conference.example.eu/2024"
+        },
+        {
+          "label": { "de": "Open-Data-Portal", "en": "Open data portal" },
+          "url": "https://atlas-data.example.eu"
+        }
+      ],
+      "funding": {
+        "source": "European Commission",
+        "programme": "Horizon Europe",
+        "amount": "€ 1,200,000",
+        "period": "2022–2025",
+        "grantId": "GA 101019803",
+        "projectNumber": "IDF-2022-031"
+      },
+      "partners": [
+        {
+          "name": "EU Living Lab Alliance",
+          "role": { "de": "Leadpartner", "en": "Lead partner" },
+          "url": "https://eu-livinglab.example.eu"
+        },
+        {
+          "name": "Technical University Munich",
+          "role": { "de": "Forschungspartner", "en": "Research partner" },
+          "url": "https://tum.example.de"
+        },
+        {
+          "name": "Urban Systems Lab",
+          "role": { "de": "Implementierungspartner", "en": "Implementation partner" },
+          "url": "https://urban-systems.example.org"
+        },
+        {
+          "name": "OECD Policy Lab",
+          "role": { "de": "Politikberatungspartner", "en": "Policy partner" },
+          "url": "https://oecd-policylab.example.org"
+        },
+        {
+          "name": "Municipality of Amsterdam",
+          "role": { "de": "Kommunaler Anwendungspartner", "en": "Municipal application partner" }
+        },
+        {
+          "name": "KIT Karlsruhe",
+          "role": { "de": "Wissenschaftspartner", "en": "Research partner" },
+          "url": "https://kit.example.de"
+        }
+      ]
     },
     {
       "id": "project-orbit",
@@ -142,10 +203,52 @@
         "de": "Interaktive Transferplattform fuer evidenzbasierte Verwaltungsprozesse.",
         "en": "Interactive transfer platform for evidence-based administrative workflows."
       },
+      "body": {
+        "de": "Projekt Orbit entwickelt eine digitale Transferplattform, die wissenschaftliche Evidenz direkt in Verwaltungsworkflows integriert. Ueber eine strukturierte Schnittstelle koennen Behoerdenmitarbeiter relevante Forschungsergebnisse abrufen, mit eigenen Fallkonstellationen vergleichen und in Entscheidungsvorlagen einbetten. In der Pilotphase 2024 wurden drei Bundeslaender eingebunden; die Nutzertests zeigten eine signifikante Reduktion der Recherche- und Aufbereitungszeit bei Grundsatzentscheidungen. Die Plattform wird bis 2025 auf zehn weitere Behoerden ausgerollt.",
+        "en": "Project Orbit develops a digital transfer platform that integrates scientific evidence directly into administrative workflows. Through a structured interface, agency staff can retrieve relevant research findings, compare them with their own case constellations, and embed them in policy papers. During the 2024 pilot phase, three federal states were involved; user testing showed a significant reduction in research and preparation time for policy decisions. The platform will be rolled out to ten additional agencies by 2025."
+      },
       "status": {
         "de": "Pilotphase",
         "en": "Pilot phase"
-      }
+      },
+      "links": [
+        {
+          "label": { "de": "Plattform-Demo", "en": "Platform demo" },
+          "url": "https://orbit-demo.example.de"
+        },
+        {
+          "label": { "de": "BMI-Pressemitteilung", "en": "BMI press release" },
+          "url": "https://bmi.example.de/presse/orbit-2024"
+        }
+      ],
+      "funding": {
+        "source": "Federal Ministry of Interior (BMI)",
+        "programme": "Digitale Verwaltung 2025",
+        "amount": "€ 680,000",
+        "period": "2023–2025",
+        "projectNumber": "IDF-2023-017"
+      },
+      "partners": [
+        {
+          "name": "Urban Systems Lab",
+          "role": { "de": "Co-Design-Partner", "en": "Co-design partner" },
+          "url": "https://urban-systems.example.org"
+        },
+        {
+          "name": "Wegweiser Institut",
+          "role": { "de": "Beratungspartner", "en": "Advisory partner" },
+          "url": "https://wegweiser.example.de"
+        },
+        {
+          "name": "City of Hamburg",
+          "role": { "de": "Pilotkommune", "en": "Pilot municipality" }
+        },
+        {
+          "name": "Govtech Hub Berlin",
+          "role": { "de": "Innovationspartner", "en": "Innovation partner" },
+          "url": "https://govtech-hub.example.de"
+        }
+      ]
     }
   ],
   "highlights": [
@@ -158,7 +261,12 @@
       "detail": {
         "de": "Ein institutsweites Programm foerdert translationale Forschung in interdisziplinaeren Teams.",
         "en": "An institute-wide program supports translational research in interdisciplinary teams."
-      }
+      },
+      "body": {
+        "de": "Das 2024 gestartete Nachwuchsprogramm verbindet Doktorandinnen und Doktoranden verschiedener Disziplinen in strukturierten Forschungsgruppen. Ziel ist es, translationspotenzialstarke Projekte fruehzeitig zu identifizieren und durch Mentoring, Methoden-Workshops und Praxiskontakte zu foerdern. Im Pilotjahr nahmen 18 Nachwuchsforschende aus sechs Fachbereichen teil; drei Projekte wurden bereits zur Drittmittelfoerderung weitergeleitet. Das Programm folgt dem Prinzip der strukturierten Offenheit: feste Rhythmen bei maximaler thematischer Freiheit der Teilnehmenden.",
+        "en": "The early-career program launched in 2024 connects doctoral researchers from different disciplines in structured research groups. The goal is to identify projects with high translational potential early and support them through mentoring, methods workshops, and industry contacts. In the pilot year, 18 early-career researchers from six departments participated; three projects were already forwarded for external funding. The program follows the principle of structured openness: fixed rhythms with maximum thematic freedom for participants."
+      },
+      "tags": ["research", "awards", "interdisciplinary", "early-career"]
     },
     {
       "id": "highlight-infra",
@@ -169,7 +277,12 @@
       "detail": {
         "de": "Neue Compute-Pipelines verkuerzen Analysezyklen und steigern Reproduzierbarkeit.",
         "en": "New compute pipelines reduce analysis cycle times and improve reproducibility."
-      }
+      },
+      "body": {
+        "de": "Die umfassende Modernisierung der Recheninfrastruktur umfasst den Einsatz containerisierter Workflows, eine neue Datenversionierungsschicht und die Migration kritischer Analysepipelines auf skalierbare Cloud-Ressourcen. Die durchschnittliche Analysezykluszeit wurde um 61 Prozent reduziert; Reproduzierbarkeitsquoten in publizierten Studien stiegen auf 94 Prozent. Alle Infrastrukturkomponenten sind als Open-Source veroeffentlicht. Die neue Architektur ermoeglicht auch externen Partnern unkomplizierten Zugang zu Standardpipelines und foerdert damit institutsueber-greifende Kollaborationen.",
+        "en": "The comprehensive modernization of the computing infrastructure includes containerized workflows, a new data versioning layer, and migration of critical analysis pipelines to scalable cloud resources. Average analysis cycle time was reduced by 61 percent; reproducibility rates in published studies rose to 94 percent. All infrastructure components are released as open source. The new architecture also gives external partners straightforward access to standard pipelines, facilitating cross-institutional collaboration."
+      },
+      "tags": ["infrastructure", "open-science", "reproducibility", "research"]
     }
   ],
   "cooperationPartners": [
@@ -196,6 +309,115 @@
         "de": "Nutzungsdaten und Co-Design-Workshops fuer kommunale Anwendungen.",
         "en": "Usage data and co-design workshops for municipal applications."
       }
+    }
+  ],
+  "timeline": [
+    {
+      "month": 1,
+      "events": [
+        {
+          "id": "tl-2024-01-01",
+          "title": { "de": "Nachwuchsprogramm gestartet", "en": "Early-career program launched" },
+          "description": {
+            "de": "18 Doktorandinnen und Doktoranden aus sechs Fachbereichen treten in die erste Kohorte ein.",
+            "en": "18 doctoral researchers from six departments join the inaugural cohort."
+          },
+          "type": "launch"
+        }
+      ]
+    },
+    {
+      "month": 3,
+      "events": [
+        {
+          "id": "tl-2024-03-01",
+          "title": { "de": "Horizon-Europe-Projekt Atlas in Skalierungsphase", "en": "Horizon Europe Project Atlas enters scaling phase" },
+          "description": {
+            "de": "Datenintegration fuer Klima- und Gesundheitsanalysen wird auf drei neue Regionen ausgeweitet.",
+            "en": "Data integration for climate and health analysis extended to three additional regions."
+          },
+          "type": "milestone"
+        }
+      ]
+    },
+    {
+      "month": 5,
+      "events": [
+        {
+          "id": "tl-2024-05-01",
+          "title": { "de": "Veroeffentlichung: Forschungsdaten sicher teilen", "en": "Publication: secure sharing for research data" },
+          "description": {
+            "de": "Dr. Jonas Hartmann veroeffentlicht Governance-Muster fuer Datenschutz und internationale Kooperation.",
+            "en": "Dr. Jonas Hartmann publishes governance patterns connecting privacy and international collaboration."
+          },
+          "type": "publication"
+        },
+        {
+          "id": "tl-2024-05-02",
+          "title": { "de": "Infrastruktur-Modernisierung abgeschlossen", "en": "Infrastructure modernization completed" },
+          "description": {
+            "de": "Containerisierte Pipelines und Cloud-Migration reduzieren Analysezeiten um 61 Prozent.",
+            "en": "Containerized pipelines and cloud migration reduce analysis cycle times by 61 percent."
+          },
+          "type": "milestone"
+        }
+      ]
+    },
+    {
+      "month": 6,
+      "events": [
+        {
+          "id": "tl-2024-06-01",
+          "title": { "de": "Partnerschaft Urban Systems Lab vertieft", "en": "Urban Systems Lab partnership deepened" },
+          "description": {
+            "de": "Ko-Design-Workshops fuer kommunale Anwendungen starten in vier Pilotstaedten.",
+            "en": "Co-design workshops for municipal applications launch in four pilot cities."
+          },
+          "type": "partnership"
+        }
+      ]
+    },
+    {
+      "month": 8,
+      "events": [
+        {
+          "id": "tl-2024-08-01",
+          "title": { "de": "Veroeffentlichung: Robuste Energienetze", "en": "Publication: resilient energy networks" },
+          "description": {
+            "de": "Dr. Helena Voss praesentiert Lastspitzenprognosemodell auf der IEEE Power & Energy Society.",
+            "en": "Dr. Helena Voss presents peak-load forecasting model at IEEE Power & Energy Society."
+          },
+          "type": "publication"
+        }
+      ]
+    },
+    {
+      "month": 10,
+      "events": [
+        {
+          "id": "tl-2024-10-01",
+          "title": { "de": "Jahreskonferenz Wissenstransfer", "en": "Annual knowledge transfer conference" },
+          "description": {
+            "de": "Institute aus sieben Laendern diskutieren Transfermodelle und praesentieren Pilotresultate.",
+            "en": "Institutes from seven countries discuss transfer models and present pilot outcomes."
+          },
+          "type": "conference"
+        }
+      ]
+    },
+    {
+      "month": 12,
+      "events": [
+        {
+          "id": "tl-2024-12-01",
+          "title": { "de": "Orbit-Pilotphase erfolgreich abgeschlossen", "en": "Orbit pilot phase successfully completed" },
+          "description": {
+            "de": "Transferplattform fuer Verwaltung erreicht alle Pilotmeilensteine; Rollout fuer 2025 geplant.",
+            "en": "Administrative transfer platform meets all pilot milestones; rollout planned for 2025."
+          },
+          "type": "milestone"
+        }
+      ]
     }
   ]
 }

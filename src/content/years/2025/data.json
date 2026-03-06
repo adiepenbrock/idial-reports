@@ -127,10 +127,63 @@
         "de": "Skalierbare Forschungsinfrastruktur fuer adaptive Modellierungs-Pipelines.",
         "en": "Scalable research infrastructure for adaptive modeling pipelines."
       },
+      "body": {
+        "de": "Projekt Horizon Grid baut eine modulare Forschungsinfrastruktur auf, die adaptive Modellierungs-Pipelines fuer heterogene Datenquellen bereitstellt. Die Architektur erlaubt es Forschungsgruppen, standardisierte Bausteine zu kombinieren und auf institutseigener oder Cloud-Infrastruktur zu betreiben, ohne tiefe DevOps-Kenntnisse vorauszusetzen. Im Rollout-Jahr 2025 wurden 14 Forschungsgruppen an sechs Institutionen ongeboardet; die Plattform verarbeitete erstmals mehr als eine Milliarde Datenpunkte pro Quartal. Bis Ende 2025 sind weitere Integrationen mit europaischen Forschungsinfrastrukturen wie EOSC geplant.",
+        "en": "Project Horizon Grid builds a modular research infrastructure providing adaptive modelling pipelines for heterogeneous data sources. The architecture allows research groups to combine standardised components and operate them on institutional or cloud infrastructure without requiring deep DevOps expertise. In the 2025 rollout year, 14 research groups across six institutions were onboarded; the platform processed more than one billion data points per quarter for the first time. Further integrations with European research infrastructures such as EOSC are planned by end of 2025."
+      },
       "status": {
         "de": "Rollout",
         "en": "Rollout"
-      }
+      },
+      "links": [
+        {
+          "label": { "de": "Technische Dokumentation", "en": "Technical documentation" },
+          "url": "https://horizon-grid.example.eu/docs"
+        },
+        {
+          "label": { "de": "GitHub-Organisation", "en": "GitHub organisation" },
+          "url": "https://github.example.com/horizon-grid"
+        },
+        {
+          "label": { "de": "EOSC-Registrierung", "en": "EOSC registration" },
+          "url": "https://eosc-portal.example.eu/services/horizon-grid"
+        }
+      ],
+      "funding": {
+        "source": "European Commission",
+        "programme": "Horizon Europe",
+        "amount": "€ 1,850,000",
+        "period": "2024–2027",
+        "grantId": "GA 101150122",
+        "projectNumber": "IDF-2024-008"
+      },
+      "partners": [
+        {
+          "name": "Euro Research Forum",
+          "role": { "de": "Koordinationspartner", "en": "Coordination partner" },
+          "url": "https://euro-research-forum.example.eu"
+        },
+        {
+          "name": "Data Governance Institute",
+          "role": { "de": "Methodenpartner", "en": "Methods partner" },
+          "url": "https://dgi.example.org"
+        },
+        {
+          "name": "ETH Zurich",
+          "role": { "de": "Wissenschaftspartner", "en": "Research partner" },
+          "url": "https://ethz.example.ch"
+        },
+        {
+          "name": "Oxford Internet Institute",
+          "role": { "de": "Analyseepartner", "en": "Analysis partner" },
+          "url": "https://oii.example.ox.ac.uk"
+        },
+        {
+          "name": "Fraunhofer FOKUS",
+          "role": { "de": "Technologiepartner", "en": "Technology partner" },
+          "url": "https://fokus.fraunhofer.example.de"
+        }
+      ]
     },
     {
       "id": "project-civic-loop",
@@ -142,10 +195,47 @@
         "de": "Kontinuierliche Rueckkopplung zwischen Forschung und kommunaler Praxis.",
         "en": "Continuous feedback loop between research and municipal practice."
       },
+      "body": {
+        "de": "Projekt Civic Loop etabliert einen strukturierten Rueckkopplungsmechanismus zwischen Forschungsteams und kommunalen Verwaltungseinheiten. Durch quartalsweise Transfersessions, ein gemeinsames Bedarfsregister und eine digitale Kooperationsflaeche wird sichergestellt, dass Forschungsfragen direkt aus administrativen Problemlagen abgeleitet werden. Im Jahr 2025 wurden 23 Kommunen eingebunden und 12 konkrete Forschungsauftraege formuliert, von denen vier bereits in laufende Projekte muendeten. Das Modell wird als Referenz fuer evidenzbasierte Kommunalverwaltung innerhalb des GovTech-Netzwerks gefuehrt.",
+        "en": "Project Civic Loop establishes a structured feedback mechanism between research teams and municipal administrative units. Quarterly transfer sessions, a shared needs register, and a digital collaboration space ensure that research questions are derived directly from administrative problem contexts. In 2025, 23 municipalities were involved and 12 concrete research mandates were formulated, four of which have already resulted in ongoing projects. The model is referenced as a benchmark for evidence-based municipal administration within the GovTech network."
+      },
       "status": {
         "de": "In Umsetzung",
         "en": "In delivery"
-      }
+      },
+      "links": [
+        {
+          "label": { "de": "GovTech-Netzwerkprofil", "en": "GovTech network profile" },
+          "url": "https://govtech-network.example.de/civic-loop"
+        },
+        {
+          "label": { "de": "Methodenhandbuch (PDF)", "en": "Methods handbook (PDF)" },
+          "url": "https://civic-loop.example.de/downloads/methoden-2025.pdf"
+        }
+      ],
+      "funding": {
+        "source": "Federal Ministry of Interior (BMI)",
+        "programme": "GovTech Transfer Initiative",
+        "amount": "€ 420,000",
+        "period": "2024–2026",
+        "projectNumber": "IDF-2024-052"
+      },
+      "partners": [
+        {
+          "name": "Public Service Lab",
+          "role": { "de": "Transferpartner", "en": "Transfer partner" },
+          "url": "https://public-service-lab.example.de"
+        },
+        {
+          "name": "City of Munich",
+          "role": { "de": "Pilotkommune", "en": "Pilot municipality" }
+        },
+        {
+          "name": "Civic Data Alliance",
+          "role": { "de": "Datenpartner", "en": "Data partner" },
+          "url": "https://civic-data.example.org"
+        }
+      ]
     }
   ],
   "highlights": [
@@ -158,7 +248,12 @@
       "detail": {
         "de": "Ein neues Programm vernetzt Forschungsteams in fuenf Laendern mit gemeinsamem Methodenstandard.",
         "en": "A new program connects research teams across five countries with a shared methods standard."
-      }
+      },
+      "body": {
+        "de": "Das internationale Verbundprogramm wurde 2025 mit Foerderung der Europaeischen Kommission im Rahmen von Horizon Europe formal etabliert. Es vernetzt Forschungsteams in Deutschland, den Niederlanden, Polen, Schweden und Spanien durch einen gemeinsamen Methodenstandard und geteilte Datenpipelines. Vierteljährliche Methodenreviews und jährliche Konsortialtreffen sichern methodische Kohaerenz bei maximaler institutioneller Autonomie. Bis Ende 2025 wurden 14 gemeinsame Publikationen eingereicht und zwei joint funding applications vorbereitet.",
+        "en": "The international consortium program was formally established in 2025 with funding from the European Commission under Horizon Europe. It connects research teams in Germany, the Netherlands, Poland, Sweden, and Spain through a shared methods standard and common data pipelines. Quarterly methodology reviews and annual consortium meetings ensure methodological coherence while preserving maximum institutional autonomy. By end of 2025, 14 joint publications had been submitted and two joint funding applications prepared."
+      },
+      "tags": ["research", "international", "open-science", "infrastructure"]
     },
     {
       "id": "highlight-open-toolkit",
@@ -169,7 +264,12 @@
       "detail": {
         "de": "Die Werkzeugkette beschleunigt Reproduzierbarkeit und kollaborative Entwicklung.",
         "en": "The toolkit accelerates reproducibility and collaborative development."
-      }
+      },
+      "body": {
+        "de": "Das Open Toolkit umfasst eine Sammlung von zehn Softwarewerkzeugen und Skriptbibliotheken fuer den gesamten Forschungsdatenzyklus: von der Erhebung ueber die Verarbeitung bis hin zur Publikation und Archivierung. Die Werkzeuge sind unter einer MIT-Lizenz veroeffentlicht und auf GitHub verfuegbar. Innerhalb von drei Monaten nach Veroeffentlichung verzeichnete das Repository ueber 1.200 Stars und 340 Forks. Vier externe Gruppen haben bereits Beitraege eingereicht. Das Toolkit wird aktiv weiterentwickelt und bildet die Grundlage fuer das internationale Verbundprogramm.",
+        "en": "The Open Toolkit comprises a collection of ten software tools and script libraries covering the full research data lifecycle: from collection through processing to publication and archiving. The tools are released under an MIT licence and available on GitHub. Within three months of release, the repository recorded over 1,200 stars and 340 forks. Four external groups have already submitted contributions. The toolkit is under active development and forms the foundation of the international consortium program."
+      },
+      "tags": ["open-science", "infrastructure", "research", "knowledge-transfer"]
     }
   ],
   "cooperationPartners": [
@@ -196,6 +296,115 @@
         "de": "Transferpfade in kommunale Anwendungen und Qualifizierung von Multiplikatoren.",
         "en": "Transfer pathways into municipal applications and multiplier training."
       }
+    }
+  ],
+  "timeline": [
+    {
+      "month": 1,
+      "events": [
+        {
+          "id": "tl-2025-01-01",
+          "title": { "de": "Horizon Grid offiziell im Rollout", "en": "Horizon Grid enters official rollout" },
+          "description": {
+            "de": "Skalierbare Modellierungsinfrastruktur geht in den produktiven Betrieb bei drei Partnereinrichtungen.",
+            "en": "Scalable modeling infrastructure enters production at three partner institutions."
+          },
+          "type": "launch"
+        }
+      ]
+    },
+    {
+      "month": 3,
+      "events": [
+        {
+          "id": "tl-2025-03-01",
+          "title": { "de": "Open Toolkit auf GitHub veroeffentlicht", "en": "Open Toolkit released on GitHub" },
+          "description": {
+            "de": "Zehn Werkzeuge und Bibliotheken unter MIT-Lizenz; 1.200 Stars in den ersten 90 Tagen.",
+            "en": "Ten tools and libraries under MIT licence; 1,200 GitHub stars in the first 90 days."
+          },
+          "type": "launch"
+        }
+      ]
+    },
+    {
+      "month": 4,
+      "events": [
+        {
+          "id": "tl-2025-04-01",
+          "title": { "de": "Internationales Konsortium formell gegruendet", "en": "International consortium formally established" },
+          "description": {
+            "de": "Fuenf Laender unterzeichnen gemeinsamen Methodenstandard und Datenkooperationsvertrag.",
+            "en": "Five countries sign shared methods standard and data cooperation agreement."
+          },
+          "type": "partnership"
+        }
+      ]
+    },
+    {
+      "month": 6,
+      "events": [
+        {
+          "id": "tl-2025-06-01",
+          "title": { "de": "Veroeffentlichung: Netzwerk-Governance", "en": "Publication: network governance for cooperative research" },
+          "description": {
+            "de": "Prof. Adrian Keller veroeffentlicht belastbares Betriebsmodell fuer Forschungsverbuende.",
+            "en": "Prof. Adrian Keller publishes a durable operating model for research alliances."
+          },
+          "type": "publication"
+        },
+        {
+          "id": "tl-2025-06-02",
+          "title": { "de": "Civic Loop Pilotstart in drei Kommunen", "en": "Civic Loop pilot launched in three municipalities" },
+          "description": {
+            "de": "Kontinuierliche Rueckkopplung zwischen Forschungsoutputs und Verwaltungspraxis beginnt.",
+            "en": "Continuous feedback loop between research outputs and municipal practice commences."
+          },
+          "type": "launch"
+        }
+      ]
+    },
+    {
+      "month": 8,
+      "events": [
+        {
+          "id": "tl-2025-08-01",
+          "title": { "de": "Auszeichnung: Innovativste Transferstrategie 2025", "en": "Award: most innovative transfer strategy 2025" },
+          "description": {
+            "de": "Europaeische Transferallianz zeichnet das Institut fuer seinen Civic-Loop-Ansatz aus.",
+            "en": "European Transfer Alliance recognizes the institute for its Civic Loop approach."
+          },
+          "type": "award"
+        }
+      ]
+    },
+    {
+      "month": 9,
+      "events": [
+        {
+          "id": "tl-2025-09-01",
+          "title": { "de": "Veroeffentlichung: Wirkungsmessung jenseits klassischer KPIs", "en": "Publication: impact measurement beyond traditional KPIs" },
+          "description": {
+            "de": "Dr. Tessa Linden praesentiert neue Metrik-Architektur auf dem European Research Policy Forum.",
+            "en": "Dr. Tessa Linden presents new metrics architecture at the European Research Policy Forum."
+          },
+          "type": "publication"
+        }
+      ]
+    },
+    {
+      "month": 11,
+      "events": [
+        {
+          "id": "tl-2025-11-01",
+          "title": { "de": "Jahreskonferenz: Zukunft der angewandten Forschung", "en": "Annual conference: the future of applied research" },
+          "description": {
+            "de": "Ueber 300 Teilnehmende aus Wissenschaft, Verwaltung und Industrie diskutieren Transferstrategien.",
+            "en": "More than 300 participants from research, government, and industry discuss transfer strategies."
+          },
+          "type": "conference"
+        }
+      ]
     }
   ]
 }

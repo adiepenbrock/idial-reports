@@ -1,4 +1,5 @@
 import { motion, useReducedMotion } from 'motion/react'
+import CountUp from '#/components/motion/CountUp'
 import type { LoadedReport } from '#/lib/content/types'
 import type { UiDictionary } from '#/lib/i18n/dictionary'
 import type { Locale } from '#/lib/i18n/locale'
@@ -45,31 +46,36 @@ export default function ReportInsightStrip({
     {
       id: 'articles',
       label: dictionary.articlesMetricLabel,
-      value: report.data.articles.length.toLocaleString(localeTag),
+      numericValue: report.data.articles.length,
+      textValue: null as string | null,
       meta: `${report.year} ${dictionary.availableYears.toLowerCase()}`,
     },
     {
       id: 'projects',
       label: dictionary.projectsMetricLabel,
-      value: report.data.projects.length.toLocaleString(localeTag),
+      numericValue: report.data.projects.length,
+      textValue: null as string | null,
       meta: `${report.data.stats.charts.length} ${dictionary.statsTitle.toLowerCase()}`,
     },
     {
       id: 'partners',
       label: dictionary.partnersMetricLabel,
-      value: report.data.cooperationPartners.length.toLocaleString(localeTag),
+      numericValue: report.data.cooperationPartners.length,
+      textValue: null as string | null,
       meta: dictionary.cooperationPartnersTitle,
     },
     {
       id: 'peak-kpi',
       label: dictionary.peakMetricLabel,
-      value: strongestKpi.value.toLocaleString(localeTag),
+      numericValue: strongestKpi.value,
+      textValue: null as string | null,
       meta: `${strongestKpi.label[locale]} ${strongestDelta !== null ? `(${strongestDeltaSign}${strongestDelta})` : ''}`,
     },
     {
       id: 'growth',
       label: dictionary.growthMetricLabel,
-      value: `${growthSign}${growth.toLocaleString(localeTag)}`,
+      numericValue: null as number | null,
+      textValue: `${growthSign}${growth.toLocaleString(localeTag)}`,
       meta: `${firstChart?.title[locale] ?? dictionary.statsTitle}`,
     },
   ]
@@ -104,7 +110,13 @@ export default function ReportInsightStrip({
           }}
         >
           <p className="meta-label">{tile.label}</p>
-          <p className="insight-value">{tile.value}</p>
+          <p className="insight-value">
+            {tile.numericValue !== null ? (
+              <CountUp value={tile.numericValue} localeTag={localeTag} />
+            ) : (
+              tile.textValue
+            )}
+          </p>
           <p className="insight-meta">{tile.meta}</p>
         </motion.article>
       ))}

@@ -1,4 +1,9 @@
+import { Link } from '@tanstack/react-router'
 import AnimatedBarChart from '#/components/charts/AnimatedBarChart'
+import AnimatedDonutChart from '#/components/charts/AnimatedDonutChart'
+import AnimatedLineChart from '#/components/charts/AnimatedLineChart'
+import AnimatedTimeline from '#/components/charts/AnimatedTimeline'
+import CountUp from '#/components/motion/CountUp'
 import Reveal from '#/components/motion/Reveal'
 import SectionNavigation from '#/components/navigation/SectionNavigation'
 import YearNavigation from '#/components/navigation/YearNavigation'
@@ -38,7 +43,6 @@ export default function DefaultReportLayout({
               </div>
 
               <div className="report-hero-title-wrap">
-                {/* Large year watermark behind title */}
                 <span className="report-hero-year" aria-hidden="true">{report.year}</span>
                 <h1>{meta.title}</h1>
               </div>
@@ -51,19 +55,19 @@ export default function DefaultReportLayout({
               <div className="report-hero-grid" aria-label={dictionary.reportOverviewLabel}>
                 <article className="report-hero-stat">
                   <p className="meta-label">{dictionary.articlesMetricLabel}</p>
-                  <p>{report.data.articles.length.toLocaleString(localeTag)}</p>
+                  <p><CountUp value={report.data.articles.length} localeTag={localeTag} /></p>
                 </article>
                 <article className="report-hero-stat">
                   <p className="meta-label">{dictionary.projectsMetricLabel}</p>
-                  <p>{report.data.projects.length.toLocaleString(localeTag)}</p>
+                  <p><CountUp value={report.data.projects.length} localeTag={localeTag} /></p>
                 </article>
                 <article className="report-hero-stat">
                   <p className="meta-label">{dictionary.partnersMetricLabel}</p>
-                  <p>{report.data.cooperationPartners.length.toLocaleString(localeTag)}</p>
+                  <p><CountUp value={report.data.cooperationPartners.length} localeTag={localeTag} /></p>
                 </article>
                 <article className="report-hero-stat">
                   <p className="meta-label">{dictionary.statsTitle}</p>
-                  <p>{report.data.stats.charts.length.toLocaleString(localeTag)}</p>
+                  <p><CountUp value={report.data.stats.charts.length} localeTag={localeTag} /></p>
                 </article>
               </div>
 
@@ -125,23 +129,35 @@ export default function DefaultReportLayout({
                     {section.key === 'articles' ? (
                       <div className="detail-grid two-col">
                         {report.data.articles.map((article) => (
-                          <article className="detail-card" key={article.id}>
+                          <Link
+                            key={article.id}
+                            to="/$locale/report/$year/article/$articleId"
+                            params={{ locale, year: report.year, articleId: article.id }}
+                            className="detail-card detail-card-featured detail-card-link"
+                          >
                             <h3>{article.title[contentLocale]}</h3>
                             <p>{article.teaser[contentLocale]}</p>
                             <p className="detail-meta">{article.author}</p>
-                          </article>
+                            <span className="cta-link detail-card-cta">{dictionary.openArticle} →</span>
+                          </Link>
                         ))}
                       </div>
                     ) : null}
 
                     {section.key === 'stats' ? (
                       <>
+                        <AnimatedDonutChart
+                          kpis={report.data.stats.kpis}
+                          locale={contentLocale}
+                          label={dictionary.kpiComparisonLabel}
+                        />
+
                         <div className="kpi-grid">
                           {report.data.stats.kpis.map((kpi) => (
                             <article className="kpi-card" key={kpi.id}>
                               <p className="kpi-title">{kpi.label[contentLocale]}</p>
                               <p className="kpi-value">
-                                {kpi.value.toLocaleString(localeTag)}
+                                <CountUp value={kpi.value} localeTag={localeTag} />
                                 {kpi.unit ? <span>{kpi.unit}</span> : null}
                               </p>
                               <p className="kpi-meta">{kpi.description[contentLocale]}</p>
@@ -150,24 +166,30 @@ export default function DefaultReportLayout({
                           ))}
                         </div>
 
-                        {report.data.stats.charts.map((chart) => (
-                          <AnimatedBarChart
-                            key={chart.id}
-                            chart={chart}
-                            locale={contentLocale}
-                          />
-                        ))}
+                        {report.data.stats.charts.map((chart, chartIndex) =>
+                          chartIndex === 0 ? (
+                            <AnimatedLineChart key={chart.id} chart={chart} locale={contentLocale} />
+                          ) : (
+                            <AnimatedBarChart key={chart.id} chart={chart} locale={contentLocale} />
+                          )
+                        )}
                       </>
                     ) : null}
 
                     {section.key === 'projects' ? (
                       <div className="detail-grid two-col">
                         {report.data.projects.map((project) => (
-                          <article className="detail-card" key={project.id}>
+                          <Link
+                            key={project.id}
+                            to="/$locale/report/$year/project/$projectId"
+                            params={{ locale, year: report.year, projectId: project.id }}
+                            className="detail-card detail-card-link"
+                          >
                             <h3>{project.title[contentLocale]}</h3>
                             <p>{project.summary[contentLocale]}</p>
                             <p className="detail-meta">{project.status[contentLocale]}</p>
-                          </article>
+                            <span className="cta-link detail-card-cta">{dictionary.openProject} →</span>
+                          </Link>
                         ))}
                       </div>
                     ) : null}
@@ -175,10 +197,16 @@ export default function DefaultReportLayout({
                     {section.key === 'highlights' ? (
                       <div className="detail-grid">
                         {report.data.highlights.map((highlight) => (
-                          <article className="detail-card" key={highlight.id}>
+                          <Link
+                            key={highlight.id}
+                            to="/$locale/report/$year/highlight/$highlightId"
+                            params={{ locale, year: report.year, highlightId: highlight.id }}
+                            className="detail-card detail-card-link"
+                          >
                             <h3>{highlight.title[contentLocale]}</h3>
                             <p>{highlight.detail[contentLocale]}</p>
-                          </article>
+                            <span className="cta-link detail-card-cta">{dictionary.openHighlight} →</span>
+                          </Link>
                         ))}
                       </div>
                     ) : null}
@@ -199,6 +227,23 @@ export default function DefaultReportLayout({
             })}
           </div>
         </div>
+
+        {report.data.timeline && report.data.timeline.length > 0 ? (
+          <Reveal>
+            <section id="timeline" className="report-anchor-section timeline-wrapper">
+              <header className="section-headline">
+                <h2>{dictionary.timelineLabel}</h2>
+                <span aria-hidden="true">{String(report.sections.length + 1).padStart(2, '0')}</span>
+              </header>
+              <AnimatedTimeline
+                timeline={report.data.timeline}
+                locale={contentLocale}
+                year={report.year}
+                label={dictionary.timelineLabel}
+              />
+            </section>
+          </Reveal>
+        ) : null}
       </div>
     </div>
   )

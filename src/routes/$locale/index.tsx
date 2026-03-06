@@ -2,11 +2,12 @@ import { createFileRoute } from '@tanstack/react-router'
 import { AnimatePresence } from 'motion/react'
 import { useMemo, useState } from 'react'
 import YearShowcaseCard from '#/components/landing/YearShowcaseCard'
+import CountUp from '#/components/motion/CountUp'
 import Reveal from '#/components/motion/Reveal'
 import { listReportYears } from '#/lib/content/loadReports'
 import { REQUIRED_SECTIONS } from '#/lib/content/sectionManifest'
 import { getUiDictionary } from '#/lib/i18n/dictionary'
-import { DEFAULT_LOCALE, resolveLocaleParam } from '#/lib/i18n/locale'
+import { DEFAULT_LOCALE, resolveLocaleParam, toLanguageTag } from '#/lib/i18n/locale'
 import { isCustomLayoutYear } from '#/lib/layout/layoutRegistry'
 
 type DesignFilter = 'all' | 'custom' | 'default'
@@ -76,23 +77,33 @@ function LocalizedHome() {
               {/* Horizontal stats bar */}
               <div className="landing-stats-bar" aria-label={dictionary.landingMetricsTitle}>
                 <div className="landing-stat">
-                  <span className="landing-stat-value">{years.length}</span>
+                  <span className="landing-stat-value">
+                    <CountUp value={years.length} localeTag={toLanguageTag(locale)} />
+                  </span>
                   <span className="landing-stat-label">{dictionary.yearsPublishedLabel}</span>
                 </div>
                 <div className="landing-stat">
-                  <span className="landing-stat-value">{totalArticles}</span>
+                  <span className="landing-stat-value">
+                    <CountUp value={totalArticles} localeTag={toLanguageTag(locale)} />
+                  </span>
                   <span className="landing-stat-label">{dictionary.articlesMetricLabel}</span>
                 </div>
                 <div className="landing-stat">
-                  <span className="landing-stat-value">{totalProjects}</span>
+                  <span className="landing-stat-value">
+                    <CountUp value={totalProjects} localeTag={toLanguageTag(locale)} />
+                  </span>
                   <span className="landing-stat-label">{dictionary.projectsMetricLabel}</span>
                 </div>
                 <div className="landing-stat">
-                  <span className="landing-stat-value">{REQUIRED_SECTIONS.length}</span>
+                  <span className="landing-stat-value">
+                    <CountUp value={REQUIRED_SECTIONS.length} localeTag={toLanguageTag(locale)} />
+                  </span>
                   <span className="landing-stat-label">{dictionary.sectionCoverageLabel}</span>
                 </div>
                 <div className="landing-stat">
-                  <span className="landing-stat-value">{totalPartners}</span>
+                  <span className="landing-stat-value">
+                    <CountUp value={totalPartners} localeTag={toLanguageTag(locale)} />
+                  </span>
                   <span className="landing-stat-label">{dictionary.partnersMetricLabel}</span>
                 </div>
               </div>

@@ -39,6 +39,35 @@ export interface UiDictionary {
   chartAverageLabel: string
   chartFocusLabel: string
   chartFromStartLabel: string
+  chartTrendLabel: string
+  backToReport: string
+  openArticle: string
+  openProject: string
+  authorLabel: string
+  statusLabel: string
+  relatedArticlesLabel: string
+  relatedProjectsLabel: string
+  articleNotFoundTitle: string
+  articleNotFoundBody: string
+  projectNotFoundTitle: string
+  projectNotFoundBody: string
+  kpiComparisonLabel: string
+  fundingLabel: string
+  fundingProgrammeLabel: string
+  fundingAmountLabel: string
+  fundingPeriodLabel: string
+  fundingGrantIdLabel: string
+  projectNumberLabel: string
+  projectPartnersLabel: string
+  projectLinksLabel: string
+  partnerRoleLabel: string
+  highlightNotFoundTitle: string
+  highlightNotFoundBody: string
+  openHighlight: string
+  relatedHighlightsLabel: string
+  tagsLabel: string
+  timelineLabel: string
+  timelineNoEvents: string
 }
 
 export const uiDictionary: Record<Locale, UiDictionary> = {
@@ -84,6 +113,35 @@ export const uiDictionary: Record<Locale, UiDictionary> = {
     chartAverageLabel: 'Durchschnitt',
     chartFocusLabel: 'Fokus',
     chartFromStartLabel: 'seit Start',
+    chartTrendLabel: 'Verlauf',
+    backToReport: 'Zurück zum Bericht',
+    openArticle: 'Artikel lesen',
+    openProject: 'Projekt ansehen',
+    authorLabel: 'Autor',
+    statusLabel: 'Status',
+    relatedArticlesLabel: 'Weitere Artikel aus diesem Bericht',
+    relatedProjectsLabel: 'Weitere Projekte aus diesem Bericht',
+    articleNotFoundTitle: 'Artikel nicht gefunden',
+    articleNotFoundBody: 'Dieser Artikel existiert nicht oder wurde entfernt.',
+    projectNotFoundTitle: 'Projekt nicht gefunden',
+    projectNotFoundBody: 'Dieses Projekt existiert nicht oder wurde entfernt.',
+    kpiComparisonLabel: 'Kennzahlen im Vergleich',
+    fundingLabel: 'Foerderung',
+    fundingProgrammeLabel: 'Programm',
+    fundingAmountLabel: 'Foerdersumme',
+    fundingPeriodLabel: 'Laufzeit',
+    fundingGrantIdLabel: 'Kennung',
+    projectNumberLabel: 'Projektnummer',
+    projectPartnersLabel: 'Projektpartner',
+    projectLinksLabel: 'Weiterführende Links',
+    partnerRoleLabel: 'Rolle',
+    highlightNotFoundTitle: 'Highlight nicht gefunden',
+    highlightNotFoundBody: 'Dieses Highlight existiert nicht oder wurde entfernt.',
+    openHighlight: 'Highlight lesen',
+    relatedHighlightsLabel: 'Weitere Highlights aus diesem Bericht',
+    tagsLabel: 'Themen',
+    timelineLabel: 'Jahresrückblick',
+    timelineNoEvents: 'Keine Ereignisse fuer diesen Monat verfuegbar.',
   },
   en: {
     siteTitle: 'Annual Reports',
@@ -127,6 +185,35 @@ export const uiDictionary: Record<Locale, UiDictionary> = {
     chartAverageLabel: 'Average',
     chartFocusLabel: 'Focus',
     chartFromStartLabel: 'from start',
+    chartTrendLabel: 'Trend',
+    backToReport: 'Back to Report',
+    openArticle: 'Read article',
+    openProject: 'View project',
+    authorLabel: 'Author',
+    statusLabel: 'Status',
+    relatedArticlesLabel: 'More articles from this report',
+    relatedProjectsLabel: 'More projects from this report',
+    articleNotFoundTitle: 'Article not found',
+    articleNotFoundBody: 'This article does not exist or has been removed.',
+    projectNotFoundTitle: 'Project not found',
+    projectNotFoundBody: 'This project does not exist or has been removed.',
+    kpiComparisonLabel: 'KPI comparison',
+    fundingLabel: 'Funding',
+    fundingProgrammeLabel: 'Programme',
+    fundingAmountLabel: 'Grant amount',
+    fundingPeriodLabel: 'Duration',
+    fundingGrantIdLabel: 'Grant ID',
+    projectNumberLabel: 'Project number',
+    projectPartnersLabel: 'Project partners',
+    projectLinksLabel: 'External links',
+    partnerRoleLabel: 'Role',
+    highlightNotFoundTitle: 'Highlight not found',
+    highlightNotFoundBody: 'This highlight does not exist or has been removed.',
+    openHighlight: 'Read highlight',
+    relatedHighlightsLabel: 'More highlights from this report',
+    tagsLabel: 'Topics',
+    timelineLabel: 'Year in review',
+    timelineNoEvents: 'No events available for this month.',
   },
 }
 

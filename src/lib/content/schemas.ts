@@ -52,17 +52,44 @@ const articleSchema = z.object({
   author: z.string().trim().min(1),
 })
 
+const projectPartnerSchema = z.object({
+  name: z.string().trim().min(1),
+  role: localizedTextSchema.optional(),
+  logoUrl: z.string().trim().min(1).optional(),
+  url: z.string().trim().min(1).optional(),
+})
+
+const projectFundingSchema = z.object({
+  source: z.string().trim().min(1),
+  programme: z.string().trim().min(1).optional(),
+  amount: z.string().trim().min(1).optional(),
+  period: z.string().trim().min(1).optional(),
+  grantId: z.string().trim().min(1).optional(),
+  projectNumber: z.string().trim().min(1).optional(),
+})
+
+const projectLinkSchema = z.object({
+  label: localizedTextSchema,
+  url: z.string().trim().min(1),
+})
+
 const projectSchema = z.object({
   id: z.string().trim().min(1),
   title: localizedTextSchema,
   summary: localizedTextSchema,
+  body: localizedTextSchema.optional(),
   status: localizedTextSchema,
+  funding: projectFundingSchema.optional(),
+  partners: z.array(projectPartnerSchema).optional(),
+  links: z.array(projectLinkSchema).optional(),
 })
 
 const highlightSchema = z.object({
   id: z.string().trim().min(1),
   title: localizedTextSchema,
   detail: localizedTextSchema,
+  body: localizedTextSchema.optional(),
+  tags: z.array(z.string().trim().min(1)).optional(),
 })
 
 const partnerSchema = z.object({
@@ -80,4 +107,13 @@ export const yearDataSchema = z.object({
   projects: z.array(projectSchema).min(1),
   highlights: z.array(highlightSchema).min(1),
   cooperationPartners: z.array(partnerSchema).min(1),
+  timeline: z.array(z.object({
+    month: z.number().int().min(1).max(12),
+    events: z.array(z.object({
+      id: z.string().trim().min(1),
+      title: localizedTextSchema,
+      description: localizedTextSchema,
+      type: z.enum(['launch', 'publication', 'award', 'milestone', 'partnership', 'conference']).optional(),
+    })).min(1),
+  })).optional(),
 })

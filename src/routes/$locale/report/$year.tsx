@@ -1,9 +1,8 @@
-import { Link, createFileRoute, notFound } from '@tanstack/react-router'
+import { Link, Outlet, createFileRoute, notFound } from '@tanstack/react-router'
 import Reveal from '#/components/motion/Reveal'
 import { listReportYears, loadReportByYear } from '#/lib/content/loadReports'
 import { getUiDictionary } from '#/lib/i18n/dictionary'
 import { DEFAULT_LOCALE, resolveLocaleParam } from '#/lib/i18n/locale'
-import { resolveYearLayout } from '#/lib/layout/resolveYearLayout'
 
 export const Route = createFileRoute('/$locale/report/$year')({
   loader: async ({ params }) => {
@@ -31,22 +30,8 @@ export const Route = createFileRoute('/$locale/report/$year')({
     ],
   }),
   notFoundComponent: ReportNotFound,
-  component: ReportPage,
+  component: () => <Outlet />,
 })
-
-function ReportPage() {
-  const { locale, dictionary, report, yearSummaries } = Route.useLoaderData()
-  const { Layout } = resolveYearLayout(report.year)
-
-  return (
-    <Layout
-      locale={locale}
-      dictionary={dictionary}
-      report={report}
-      yearSummaries={yearSummaries}
-    />
-  )
-}
 
 function ReportNotFound() {
   const params = Route.useParams()
