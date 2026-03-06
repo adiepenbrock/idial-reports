@@ -1,0 +1,202 @@
+{
+  "stats": {
+    "kpis": [
+      {
+        "id": "publications",
+        "label": {
+          "de": "Publikationen",
+          "en": "Publications"
+        },
+        "description": {
+          "de": "Begutachtete Beitraege in Fachjournalen",
+          "en": "Peer-reviewed journal contributions"
+        },
+        "value": 118,
+        "delta": "+9%"
+      },
+      {
+        "id": "third-party-funding",
+        "label": {
+          "de": "Drittmittel",
+          "en": "Third-party funding"
+        },
+        "description": {
+          "de": "Bewilligte Foerdermittel in Mio. EUR",
+          "en": "Approved external funding in million EUR"
+        },
+        "value": 14.2,
+        "unit": "M EUR",
+        "delta": "+1.4"
+      },
+      {
+        "id": "doctoral-candidates",
+        "label": {
+          "de": "Promovierende",
+          "en": "Doctoral candidates"
+        },
+        "description": {
+          "de": "Aktive Doktorandinnen und Doktoranden",
+          "en": "Active doctoral researchers"
+        },
+        "value": 67,
+        "delta": "+6"
+      }
+    ],
+    "charts": [
+      {
+        "id": "quarterly-output",
+        "title": {
+          "de": "Quartalsweise Forschungsleistung",
+          "en": "Quarterly research output"
+        },
+        "description": {
+          "de": "Kombinierter Index aus Publikationen, Open-Source-Betraegen und Pilotprojekten.",
+          "en": "Combined index of publications, open-source contributions, and pilot projects."
+        },
+        "unit": "Index",
+        "points": [
+          {
+            "id": "q1",
+            "label": {
+              "de": "Q1",
+              "en": "Q1"
+            },
+            "value": 72
+          },
+          {
+            "id": "q2",
+            "label": {
+              "de": "Q2",
+              "en": "Q2"
+            },
+            "value": 79
+          },
+          {
+            "id": "q3",
+            "label": {
+              "de": "Q3",
+              "en": "Q3"
+            },
+            "value": 88
+          },
+          {
+            "id": "q4",
+            "label": {
+              "de": "Q4",
+              "en": "Q4"
+            },
+            "value": 94
+          }
+        ]
+      }
+    ]
+  },
+  "articles": [
+    {
+      "id": "article-knowledge-graphs",
+      "title": {
+        "de": "Wissensgraphen fuer klimaresiliente Stadtplanung",
+        "en": "Knowledge graphs for climate-resilient urban planning"
+      },
+      "teaser": {
+        "de": "Ein transdisziplinaerer Ansatz verbindet Geodaten, soziale Indikatoren und politische Szenarien.",
+        "en": "A transdisciplinary approach links geospatial data, social indicators, and policy scenarios."
+      },
+      "author": "Dr. Mara Stein"
+    },
+    {
+      "id": "article-open-science",
+      "title": {
+        "de": "Open Science als Infrastrukturaufgabe",
+        "en": "Open science as an infrastructure mission"
+      },
+      "teaser": {
+        "de": "Wie wir Reproduzierbarkeit durch gemeinsame Standards und Werkzeuge messbar verbessern.",
+        "en": "How shared standards and tools improved reproducibility in measurable ways."
+      },
+      "author": "Prof. Leif Wagner"
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-aurora",
+      "title": {
+        "de": "Projekt Aurora",
+        "en": "Project Aurora"
+      },
+      "summary": {
+        "de": "Ein Forschungsnetzwerk fuer datengetriebene Risikoanalyse in urbanen Waermeinseln.",
+        "en": "A research network for data-driven risk analysis in urban heat island regions."
+      },
+      "status": {
+        "de": "In Umsetzung",
+        "en": "In delivery"
+      }
+    },
+    {
+      "id": "project-pulse",
+      "title": {
+        "de": "Projekt Pulse",
+        "en": "Project Pulse"
+      },
+      "summary": {
+        "de": "Neue Laborpipeline fuer hochfrequente Sensordaten in der Materialforschung.",
+        "en": "A new lab pipeline for high-frequency sensor data in materials research."
+      },
+      "status": {
+        "de": "Abgeschlossen",
+        "en": "Completed"
+      }
+    }
+  ],
+  "highlights": [
+    {
+      "id": "highlight-award",
+      "title": {
+        "de": "Auszeichnung fuer datenethische Leitlinien",
+        "en": "Award for data ethics guidelines"
+      },
+      "detail": {
+        "de": "Unser institutsweites Framework wurde als Best Practice im Verbundprogramm anerkannt.",
+        "en": "Our institute-wide framework was recognized as a best practice in the consortium program."
+      }
+    },
+    {
+      "id": "highlight-lab",
+      "title": {
+        "de": "Neues Transferlabor eroefnet",
+        "en": "New transfer lab launched"
+      },
+      "detail": {
+        "de": "Das Labor ermoeglicht Prototyping zwischen Wissenschaft, Verwaltung und Industrie.",
+        "en": "The lab enables rapid prototyping between science, public administration, and industry."
+      }
+    }
+  ],
+  "cooperationPartners": [
+    {
+      "id": "partner-city-network",
+      "name": "City Innovation Network",
+      "contribution": {
+        "de": "Gemeinsame Pilotflaechen und Datenbereitstellung fuer stadtnahe Feldtests.",
+        "en": "Joint pilot areas and data access for urban field studies."
+      }
+    },
+    {
+      "id": "partner-university-freiburg",
+      "name": "University of Freiburg",
+      "contribution": {
+        "de": "Methodenentwicklung fuer kausale Modellierung.",
+        "en": "Method development for causal modeling."
+      }
+    },
+    {
+      "id": "partner-helmholtz-hub",
+      "name": "Helmholtz Data Hub",
+      "contribution": {
+        "de": "Bereitstellung von Infrastruktur fuer Open-Data-Workflows.",
+        "en": "Infrastructure support for open data workflows."
+      }
+    }
+  ]
+}

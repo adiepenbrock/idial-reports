@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "kpis": [
+      {
+        "id": "publications",
+        "label": {
+          "de": "Publikationen",
+          "en": "Publications"
+        },
+        "description": {
+          "de": "Publizierte wissenschaftliche Arbeiten",
+          "en": "Published scientific papers"
+        },
+        "value": 149,
+        "delta": "+13"
+      },
+      {
+        "id": "international-partnerships",
+        "label": {
+          "de": "Internationale Partnerschaften",
+          "en": "International partnerships"
+        },
+        "description": {
+          "de": "Aktive grenzueberschreitende Forschungsverbuende",
+          "en": "Active cross-border research alliances"
+        },
+        "value": 18,
+        "delta": "+4"
+      },
+      {
+        "id": "prototype-adoptions",
+        "label": {
+          "de": "Prototyp-Uebernahmen",
+          "en": "Prototype adoptions"
+        },
+        "description": {
+          "de": "Produktive Uebernahmen in Partnerorganisationen",
+          "en": "Production-grade adoptions by partner organizations"
+        },
+        "value": 31,
+        "delta": "+10"
+      }
+    ],
+    "charts": [
+      {
+        "id": "program-maturity",
+        "title": {
+          "de": "Programmreife pro Quartal",
+          "en": "Program maturity by quarter"
+        },
+        "description": {
+          "de": "Index aus Reifegrad, Transferfaehigkeit und Wiederverwendung in Partnerkontexten.",
+          "en": "Index combining maturity, transfer readiness, and reuse in partner contexts."
+        },
+        "unit": "Index",
+        "points": [
+          {
+            "id": "q1",
+            "label": {
+              "de": "Q1",
+              "en": "Q1"
+            },
+            "value": 81
+          },
+          {
+            "id": "q2",
+            "label": {
+              "de": "Q2",
+              "en": "Q2"
+            },
+            "value": 90
+          },
+          {
+            "id": "q3",
+            "label": {
+              "de": "Q3",
+              "en": "Q3"
+            },
+            "value": 99
+          },
+          {
+            "id": "q4",
+            "label": {
+              "de": "Q4",
+              "en": "Q4"
+            },
+            "value": 108
+          }
+        ]
+      }
+    ]
+  },
+  "articles": [
+    {
+      "id": "article-network-governance",
+      "title": {
+        "de": "Netzwerk-Governance fuer kooperative Forschung",
+        "en": "Network governance for cooperative research"
+      },
+      "teaser": {
+        "de": "Ein belastbares Betriebsmodell verbindet wissenschaftliche Freiheit mit verlässlicher Steuerung.",
+        "en": "A durable operating model balances scientific autonomy and reliable coordination."
+      },
+      "author": "Prof. Adrian Keller"
+    },
+    {
+      "id": "article-impact-methods",
+      "title": {
+        "de": "Wirkungsmessung jenseits klassischer KPIs",
+        "en": "Impact measurement beyond traditional KPIs"
+      },
+      "teaser": {
+        "de": "Neue Metriken verbinden qualitative Erkenntnisse mit quantitativer Vergleichbarkeit.",
+        "en": "New metrics bridge qualitative insights with quantitative comparability."
+      },
+      "author": "Dr. Tessa Linden"
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-horizon-grid",
+      "title": {
+        "de": "Projekt Horizon Grid",
+        "en": "Project Horizon Grid"
+      },
+      "summary": {
+        "de": "Skalierbare Forschungsinfrastruktur fuer adaptive Modellierungs-Pipelines.",
+        "en": "Scalable research infrastructure for adaptive modeling pipelines."
+      },
+      "status": {
+        "de": "Rollout",
+        "en": "Rollout"
+      }
+    },
+    {
+      "id": "project-civic-loop",
+      "title": {
+        "de": "Projekt Civic Loop",
+        "en": "Project Civic Loop"
+      },
+      "summary": {
+        "de": "Kontinuierliche Rueckkopplung zwischen Forschung und kommunaler Praxis.",
+        "en": "Continuous feedback loop between research and municipal practice."
+      },
+      "status": {
+        "de": "In Umsetzung",
+        "en": "In delivery"
+      }
+    }
+  ],
+  "highlights": [
+    {
+      "id": "highlight-international-program",
+      "title": {
+        "de": "Internationales Programm etabliert",
+        "en": "International program established"
+      },
+      "detail": {
+        "de": "Ein neues Programm vernetzt Forschungsteams in fuenf Laendern mit gemeinsamem Methodenstandard.",
+        "en": "A new program connects research teams across five countries with a shared methods standard."
+      }
+    },
+    {
+      "id": "highlight-open-toolkit",
+      "title": {
+        "de": "Open Toolkit veroeffentlicht",
+        "en": "Open toolkit released"
+      },
+      "detail": {
+        "de": "Die Werkzeugkette beschleunigt Reproduzierbarkeit und kollaborative Entwicklung.",
+        "en": "The toolkit accelerates reproducibility and collaborative development."
+      }
+    }
+  ],
+  "cooperationPartners": [
+    {
+      "id": "partner-euro-research-forum",
+      "name": "Euro Research Forum",
+      "contribution": {
+        "de": "Methodenabgleich und Koordination gemeinsamer Pilotstudien.",
+        "en": "Method alignment and coordination of joint pilot studies."
+      }
+    },
+    {
+      "id": "partner-data-governance-institute",
+      "name": "Data Governance Institute",
+      "contribution": {
+        "de": "Co-Entwicklung von Governance-Rahmen fuer vertrauenswuerdige Datennutzung.",
+        "en": "Co-development of governance frameworks for trustworthy data use."
+      }
+    },
+    {
+      "id": "partner-public-service-lab",
+      "name": "Public Service Lab",
+      "contribution": {
+        "de": "Transferpfade in kommunale Anwendungen und Qualifizierung von Multiplikatoren.",
+        "en": "Transfer pathways into municipal applications and multiplier training."
+      }
+    }
+  ]
+}
