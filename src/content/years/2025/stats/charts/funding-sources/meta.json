@@ -1,0 +1,21 @@
+{
+  "id": "funding-sources",
+  "order": 2,
+  "type": "pie",
+  "title": {
+    "de": "Mittelherkunft 2025",
+    "en": "Funding sources 2025"
+  },
+  "description": {
+    "de": "Verteilung der eingeworbenen Drittmittel nach Förderinstitution.",
+    "en": "Distribution of third-party funding by funding institution."
+  },
+  "unit": "€k",
+  "points": [
+    { "id": "federal",     "label": { "de": "Bundesministerien",  "en": "Federal ministries" },  "value": 1680 },
+    { "id": "eu",          "label": { "de": "EU-Programme",        "en": "EU programmes" },       "value": 1230 },
+    { "id": "state",       "label": { "de": "Landesförderung",     "en": "State funding" },       "value": 520  },
+    { "id": "private",     "label": { "de": "Private Drittmittel", "en": "Private funding" },     "value": 390  },
+    { "id": "foundations", "label": { "de": "Stiftungen",          "en": "Foundations" },         "value": 145  }
+  ]
+}

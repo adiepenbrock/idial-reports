@@ -1,0 +1,21 @@
+{
+  "id": "funding-history",
+  "order": 2,
+  "type": "column",
+  "title": {
+    "de": "Drittmittelentwicklung",
+    "en": "Third-party funding trend"
+  },
+  "description": {
+    "de": "Eingeworbene Drittmittel in Tausend Euro über die letzten fünf Jahre.",
+    "en": "External funding raised in thousands of euros over the last five years."
+  },
+  "unit": "€k",
+  "points": [
+    { "id": "y2020", "label": { "de": "2020", "en": "2020" }, "value": 1850 },
+    { "id": "y2021", "label": { "de": "2021", "en": "2021" }, "value": 2140 },
+    { "id": "y2022", "label": { "de": "2022", "en": "2022" }, "value": 2530 },
+    { "id": "y2023", "label": { "de": "2023", "en": "2023" }, "value": 2980 },
+    { "id": "y2024", "label": { "de": "2024", "en": "2024" }, "value": 3460 }
+  ]
+}

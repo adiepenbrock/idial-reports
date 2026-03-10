@@ -105,6 +105,7 @@ const chartPointSchema = z.object({
 export const chartMetaSchema = z.object({
   id: z.string().trim().min(1),
   order: z.number().int().min(1),
+  type: z.enum(['bar', 'line', 'column', 'pie']).optional(),
   title: localizedTextSchema,
   description: localizedTextSchema,
   unit: z.string().trim().min(1).optional(),

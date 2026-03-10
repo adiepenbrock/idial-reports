@@ -1,7 +1,9 @@
 import { Link } from '@tanstack/react-router'
 import AnimatedBarChart from '#/components/charts/AnimatedBarChart'
+import AnimatedColumnChart from '#/components/charts/AnimatedColumnChart'
 import AnimatedDonutChart from '#/components/charts/AnimatedDonutChart'
 import AnimatedLineChart from '#/components/charts/AnimatedLineChart'
+import AnimatedPieChart from '#/components/charts/AnimatedPieChart'
 import AnimatedTimeline from '#/components/charts/AnimatedTimeline'
 import CountUp from '#/components/motion/CountUp'
 import Reveal from '#/components/motion/Reveal'
@@ -166,13 +168,13 @@ export default function DefaultReportLayout({
                           ))}
                         </div>
 
-                        {report.data.stats.charts.map((chart, chartIndex) =>
-                          chartIndex === 0 ? (
-                            <AnimatedLineChart key={chart.id} chart={chart} locale={contentLocale} />
-                          ) : (
-                            <AnimatedBarChart key={chart.id} chart={chart} locale={contentLocale} />
-                          )
-                        )}
+                        {report.data.stats.charts.map((chart, chartIndex) => {
+                          const type = chart.type ?? (chartIndex === 0 ? 'line' : 'bar')
+                          if (type === 'column') return <AnimatedColumnChart key={chart.id} chart={chart} locale={contentLocale} />
+                          if (type === 'pie') return <AnimatedPieChart key={chart.id} chart={chart} locale={contentLocale} />
+                          if (type === 'line') return <AnimatedLineChart key={chart.id} chart={chart} locale={contentLocale} />
+                          return <AnimatedBarChart key={chart.id} chart={chart} locale={contentLocale} />
+                        })}
                       </>
                     ) : null}
 
