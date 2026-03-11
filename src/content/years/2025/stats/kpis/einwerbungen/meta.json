@@ -1,0 +1,15 @@
+{
+  "id": "einwerbungen",
+  "order": 2,
+  "value": 1990804,
+  "unit": "€",
+  "label": {
+    "de": "Einwerbungen",
+    "en": "Acquisitions"
+  },
+  "delta": "–",
+  "description": {
+    "de": "Projektmittel aus Förderanträgen",
+    "en": "Project funding from grant applications"
+  }
+}

@@ -1,14 +1,14 @@
 {
-  "id": "publications",
-  "order": 1,
-  "value": 149,
-  "delta": "+13",
+  "id": "veroeffentlichungen",
+  "order": 3,
+  "value": 45,
   "label": {
-    "de": "Publikationen",
+    "de": "Veröffentlichungen",
     "en": "Publications"
   },
+  "delta": "–",
   "description": {
-    "de": "Publizierte wissenschaftliche Arbeiten",
-    "en": "Published scientific papers"
+    "de": "Wissenschaftliche Veröffentlichungen im Berichtsjahr",
+    "en": "Scientific publications in the reporting year"
   }
 }

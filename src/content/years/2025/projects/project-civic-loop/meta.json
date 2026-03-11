@@ -6,7 +6,7 @@
     "en": "Project Civic Loop"
   },
   "summary": {
-    "de": "Kontinuierliche Rueckkopplung zwischen Forschung und kommunaler Praxis.",
+    "de": "Kontinuierliche Rückkopplung zwischen Forschung und kommunaler Praxis.",
     "en": "Continuous feedback loop between research and municipal practice."
   },
   "status": {
@@ -23,40 +23,64 @@
   "team": [
     {
       "name": "Dr. Kai Riedel",
-      "role": { "de": "Projektleitung", "en": "Project lead" }
+      "role": {
+        "de": "Projektleitung",
+        "en": "Project lead"
+      }
     },
     {
       "name": "Mia Bergmann",
-      "role": { "de": "Transferforschung", "en": "Transfer research" }
+      "role": {
+        "de": "Transferforschung",
+        "en": "Transfer research"
+      }
     },
     {
       "name": "Leon Fuchs",
-      "role": { "de": "Kommunale Koordination", "en": "Municipal coordination" }
+      "role": {
+        "de": "Kommunale Koordination",
+        "en": "Municipal coordination"
+      }
     }
   ],
   "partners": [
     {
       "name": "Public Service Lab",
-      "role": { "de": "Transferpartner", "en": "Transfer partner" },
+      "role": {
+        "de": "Transferpartner",
+        "en": "Transfer partner"
+      },
       "url": "https://public-service-lab.example.de"
     },
     {
       "name": "City of Munich",
-      "role": { "de": "Pilotkommune", "en": "Pilot municipality" }
+      "role": {
+        "de": "Pilotkommune",
+        "en": "Pilot municipality"
+      }
     },
     {
       "name": "Civic Data Alliance",
-      "role": { "de": "Datenpartner", "en": "Data partner" },
+      "role": {
+        "de": "Datenpartner",
+        "en": "Data partner"
+      },
       "url": "https://civic-data.example.org"
     }
   ],
   "links": [
     {
-      "label": { "de": "GovTech-Netzwerkprofil", "en": "GovTech network profile" },
+      "label": {
+        "de": "GovTech-Netzwerkprofil",
+        "en": "GovTech network profile"
+      },
       "url": "https://govtech-network.example.de/civic-loop"
     },
     {
-      "label": { "de": "Methodenhandbuch (PDF)", "en": "Methods handbook (PDF)" },
+      "label": {
+        "de": "Methodenhandbuch (PDF)",
+        "en": "Methods handbook (PDF)"
+      },
       "url": "https://civic-loop.example.de/downloads/methoden-2025.pdf"
     }
   ]

@@ -1,0 +1,15 @@
+{
+  "id": "lehrleistungen",
+  "order": 7,
+  "value": 336.61,
+  "unit": "SWS",
+  "label": {
+    "de": "Lehrleistungen",
+    "en": "Teaching Load"
+  },
+  "delta": "–",
+  "description": {
+    "de": "Lehrleistungen in Semesterwochenstunden",
+    "en": "Teaching load in semester hours per week"
+  }
+}

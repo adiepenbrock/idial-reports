@@ -1,0 +1,15 @@
+{
+  "id": "drittmittel",
+  "order": 1,
+  "value": 2051951,
+  "unit": "€",
+  "label": {
+    "de": "Drittmittel",
+    "en": "Third-Party Funding"
+  },
+  "delta": "–",
+  "description": {
+    "de": "Eingeworbene Drittmittel im Berichtsjahr",
+    "en": "Third-party funding acquired in the reporting year"
+  }
+}

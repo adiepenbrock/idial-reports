@@ -6,8 +6,13 @@
     "en": "Computing infrastructure modernized"
   },
   "detail": {
-    "de": "Neue Compute-Pipelines verkuerzen Analysezyklen und steigern Reproduzierbarkeit.",
+    "de": "Neue Compute-Pipelines verkürzen Analysezyklen und steigern Reproduzierbarkeit.",
     "en": "New compute pipelines reduce analysis cycle times and improve reproducibility."
   },
-  "tags": ["infrastructure", "open-science", "reproducibility", "research"]
+  "tags": [
+    "infrastructure",
+    "open-science",
+    "reproducibility",
+    "research"
+  ]
 }

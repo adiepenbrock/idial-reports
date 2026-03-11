@@ -1,14 +1,14 @@
 {
-  "id": "prototype-adoptions",
-  "order": 3,
-  "value": 31,
-  "delta": "+10",
+  "id": "promovenden",
+  "order": 5,
+  "value": 19,
   "label": {
-    "de": "Prototyp-Uebernahmen",
-    "en": "Prototype adoptions"
+    "de": "Promovenden",
+    "en": "Doctoral Candidates"
   },
+  "delta": "–",
   "description": {
-    "de": "Produktive Uebernahmen in Partnerorganisationen",
-    "en": "Production-grade adoptions by partner organizations"
+    "de": "Aktive Promovendinnen und Promovenden",
+    "en": "Active doctoral candidates"
   }
 }

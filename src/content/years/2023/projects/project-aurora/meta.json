@@ -6,7 +6,7 @@
     "en": "Project Aurora"
   },
   "summary": {
-    "de": "Ein Forschungsnetzwerk fuer datengetriebene Risikoanalyse in urbanen Waermeinseln.",
+    "de": "Ein Forschungsnetzwerk für datengetriebene Risikoanalyse in urbanen Wärmeinseln.",
     "en": "A research network for data-driven risk analysis in urban heat island regions."
   },
   "status": {
@@ -24,53 +24,86 @@
   "partners": [
     {
       "name": "City Innovation Network",
-      "role": { "de": "Praxispartner", "en": "Practice partner" },
+      "role": {
+        "de": "Praxispartner",
+        "en": "Practice partner"
+      },
       "url": "https://cityinnovation.example.org"
     },
     {
       "name": "University of Freiburg",
-      "role": { "de": "Wissenschaftspartner", "en": "Research partner" },
+      "role": {
+        "de": "Wissenschaftspartner",
+        "en": "Research partner"
+      },
       "url": "https://uni-freiburg.example.de"
     },
     {
       "name": "Fraunhofer IESE",
-      "role": { "de": "Technologiepartner", "en": "Technology partner" },
+      "role": {
+        "de": "Technologiepartner",
+        "en": "Technology partner"
+      },
       "url": "https://iese.fraunhofer.example.de"
     },
     {
       "name": "Open Data Institute",
-      "role": { "de": "Datenpartner", "en": "Data partner" }
+      "role": {
+        "de": "Datenpartner",
+        "en": "Data partner"
+      }
     }
   ],
   "team": [
     {
       "name": "Dr. Lena Hartmann",
-      "role": { "de": "Projektleitung", "en": "Project lead" }
+      "role": {
+        "de": "Projektleitung",
+        "en": "Project lead"
+      }
     },
     {
       "name": "Jonas Weber",
-      "role": { "de": "Datenwissenschaftler", "en": "Data scientist" }
+      "role": {
+        "de": "Datenwissenschaftler",
+        "en": "Data scientist"
+      }
     },
     {
       "name": "Miriam Schulz",
-      "role": { "de": "Umweltforscherin", "en": "Environmental researcher" }
+      "role": {
+        "de": "Umweltforscherin",
+        "en": "Environmental researcher"
+      }
     },
     {
       "name": "Tobias Becker",
-      "role": { "de": "Softwareentwicklung", "en": "Software engineering" }
+      "role": {
+        "de": "Softwareentwicklung",
+        "en": "Software engineering"
+      }
     }
   ],
   "links": [
     {
-      "label": { "de": "Projektwebsite", "en": "Project website" },
+      "label": {
+        "de": "Projektwebsite",
+        "en": "Project website"
+      },
       "url": "https://aurora.example-research.de"
     },
     {
-      "label": { "de": "Datensatz auf Zenodo", "en": "Dataset on Zenodo" },
+      "label": {
+        "de": "Datensatz auf Zenodo",
+        "en": "Dataset on Zenodo"
+      },
       "url": "https://zenodo.example.org/record/aurora-2023"
     },
     {
-      "label": { "de": "Förderprofil Helmholtz", "en": "Helmholtz funding profile" },
+      "label": {
+        "de": "Förderprofil Helmholtz",
+        "en": "Helmholtz funding profile"
+      },
       "url": "https://helmholtz.example.de/projekte/aurora"
     }
   ]

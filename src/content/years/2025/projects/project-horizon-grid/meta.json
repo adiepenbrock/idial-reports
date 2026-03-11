@@ -6,7 +6,7 @@
     "en": "Project Horizon Grid"
   },
   "summary": {
-    "de": "Skalierbare Forschungsinfrastruktur fuer adaptive Modellierungs-Pipelines.",
+    "de": "Skalierbare Forschungsinfrastruktur für adaptive Modellierungs-Pipelines.",
     "en": "Scalable research infrastructure for adaptive modeling pipelines."
   },
   "status": {
@@ -24,63 +24,102 @@
   "team": [
     {
       "name": "Prof. Dr. Elena Stark",
-      "role": { "de": "Projektleitung & Infrastrukturarchitektur", "en": "Project lead & infrastructure architecture" }
+      "role": {
+        "de": "Projektleitung & Infrastrukturarchitektur",
+        "en": "Project lead & infrastructure architecture"
+      }
     },
     {
       "name": "Max Lorenz",
-      "role": { "de": "DevOps & Plattformbetrieb", "en": "DevOps & platform operations" }
+      "role": {
+        "de": "DevOps & Plattformbetrieb",
+        "en": "DevOps & platform operations"
+      }
     },
     {
       "name": "Julia Neumann",
-      "role": { "de": "Datenmodellierung", "en": "Data modelling" }
+      "role": {
+        "de": "Datenmodellierung",
+        "en": "Data modelling"
+      }
     },
     {
       "name": "Ben Sommer",
-      "role": { "de": "API-Entwicklung", "en": "API development" }
+      "role": {
+        "de": "API-Entwicklung",
+        "en": "API development"
+      }
     },
     {
       "name": "Hana Yilmaz",
-      "role": { "de": "Onboarding & Dokumentation", "en": "Onboarding & documentation" }
+      "role": {
+        "de": "Onboarding & Dokumentation",
+        "en": "Onboarding & documentation"
+      }
     }
   ],
   "partners": [
     {
       "name": "Euro Research Forum",
-      "role": { "de": "Koordinationspartner", "en": "Coordination partner" },
+      "role": {
+        "de": "Koordinationspartner",
+        "en": "Coordination partner"
+      },
       "url": "https://euro-research-forum.example.eu"
     },
     {
       "name": "Data Governance Institute",
-      "role": { "de": "Methodenpartner", "en": "Methods partner" },
+      "role": {
+        "de": "Methodenpartner",
+        "en": "Methods partner"
+      },
       "url": "https://dgi.example.org"
     },
     {
       "name": "ETH Zurich",
-      "role": { "de": "Wissenschaftspartner", "en": "Research partner" },
+      "role": {
+        "de": "Wissenschaftspartner",
+        "en": "Research partner"
+      },
       "url": "https://ethz.example.ch"
     },
     {
       "name": "Oxford Internet Institute",
-      "role": { "de": "Analyseepartner", "en": "Analysis partner" },
+      "role": {
+        "de": "Analyseepartner",
+        "en": "Analysis partner"
+      },
       "url": "https://oii.example.ox.ac.uk"
     },
     {
       "name": "Fraunhofer FOKUS",
-      "role": { "de": "Technologiepartner", "en": "Technology partner" },
+      "role": {
+        "de": "Technologiepartner",
+        "en": "Technology partner"
+      },
       "url": "https://fokus.fraunhofer.example.de"
     }
   ],
   "links": [
     {
-      "label": { "de": "Technische Dokumentation", "en": "Technical documentation" },
+      "label": {
+        "de": "Technische Dokumentation",
+        "en": "Technical documentation"
+      },
       "url": "https://horizon-grid.example.eu/docs"
     },
     {
-      "label": { "de": "GitHub-Organisation", "en": "GitHub organisation" },
+      "label": {
+        "de": "GitHub-Organisation",
+        "en": "GitHub organisation"
+      },
       "url": "https://github.example.com/horizon-grid"
     },
     {
-      "label": { "de": "EOSC-Registrierung", "en": "EOSC registration" },
+      "label": {
+        "de": "EOSC-Registrierung",
+        "en": "EOSC registration"
+      },
       "url": "https://eosc-portal.example.eu/services/horizon-grid"
     }
   ]

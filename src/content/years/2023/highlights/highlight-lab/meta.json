@@ -2,12 +2,17 @@
   "id": "highlight-lab",
   "order": 2,
   "title": {
-    "de": "Neues Transferlabor eroefnet",
+    "de": "Neüs Transferlabor eröfnet",
     "en": "New transfer lab launched"
   },
   "detail": {
-    "de": "Das Labor ermoeglicht Prototyping zwischen Wissenschaft, Verwaltung und Industrie.",
+    "de": "Das Labor ermöglicht Prototyping zwischen Wissenschaft, Verwaltung und Industrie.",
     "en": "The lab enables rapid prototyping between science, public administration, and industry."
   },
-  "tags": ["infrastructure", "knowledge-transfer", "co-design", "research"]
+  "tags": [
+    "infrastructure",
+    "knowledge-transfer",
+    "co-design",
+    "research"
+  ]
 }

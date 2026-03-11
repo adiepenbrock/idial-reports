@@ -1,14 +1,14 @@
 {
-  "id": "international-partnerships",
-  "order": 2,
-  "value": 18,
-  "delta": "+4",
+  "id": "mitarbeiter",
+  "order": 4,
+  "value": 39,
   "label": {
-    "de": "Internationale Partnerschaften",
-    "en": "International partnerships"
+    "de": "Mitarbeiter",
+    "en": "Staff Members"
   },
+  "delta": "–",
   "description": {
-    "de": "Aktive grenzueberschreitende Forschungsverbuende",
-    "en": "Active cross-border research alliances"
+    "de": "Beschäftigte Mitarbeiterinnen und Mitarbeiter",
+    "en": "Employed staff members"
   }
 }

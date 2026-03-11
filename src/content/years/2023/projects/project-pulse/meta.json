@@ -6,7 +6,7 @@
     "en": "Project Pulse"
   },
   "summary": {
-    "de": "Neue Laborpipeline fuer hochfrequente Sensordaten in der Materialforschung.",
+    "de": "Neue Laborpipeline für hochfreqünte Sensordaten in der Materialforschung.",
     "en": "A new lab pipeline for high-frequency sensor data in materials research."
   },
   "status": {
@@ -23,40 +23,64 @@
   "partners": [
     {
       "name": "Helmholtz Data Hub",
-      "role": { "de": "Infrastrukturpartner", "en": "Infrastructure partner" },
+      "role": {
+        "de": "Infrastrukturpartner",
+        "en": "Infrastructure partner"
+      },
       "url": "https://helmholtz-datahub.example.de"
     },
     {
       "name": "Leibniz Institute for Materials",
-      "role": { "de": "Forschungspartner", "en": "Research partner" },
+      "role": {
+        "de": "Forschungspartner",
+        "en": "Research partner"
+      },
       "url": "https://leibniz-materials.example.de"
     },
     {
       "name": "NFDI4Ing",
-      "role": { "de": "Standardisierungspartner", "en": "Standards partner" }
+      "role": {
+        "de": "Standardisierungspartner",
+        "en": "Standards partner"
+      }
     }
   ],
   "team": [
     {
       "name": "Prof. Dr. Markus Klein",
-      "role": { "de": "Projektleitung", "en": "Project lead" }
+      "role": {
+        "de": "Projektleitung",
+        "en": "Project lead"
+      }
     },
     {
       "name": "Anna Fischer",
-      "role": { "de": "Dateningenieurin", "en": "Data engineer" }
+      "role": {
+        "de": "Dateningenieurin",
+        "en": "Data engineer"
+      }
     },
     {
       "name": "Fabian Müller",
-      "role": { "de": "Materialwissenschaftler", "en": "Materials scientist" }
+      "role": {
+        "de": "Materialwissenschaftler",
+        "en": "Materials scientist"
+      }
     }
   ],
   "links": [
     {
-      "label": { "de": "Quellcode auf GitHub", "en": "Source code on GitHub" },
+      "label": {
+        "de": "Qüllcode auf GitHub",
+        "en": "Source code on GitHub"
+      },
       "url": "https://github.example.com/pulse-pipeline"
     },
     {
-      "label": { "de": "DFG-Projektseite", "en": "DFG project page" },
+      "label": {
+        "de": "DFG-Projektseite",
+        "en": "DFG project page"
+      },
       "url": "https://gepris.dfg.example.de/projekt/pulse"
     }
   ]

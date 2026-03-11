@@ -1,0 +1,14 @@
+{
+  "id": "abschlussarbeiten",
+  "order": 6,
+  "value": 99,
+  "label": {
+    "de": "Abschlussarbeiten",
+    "en": "Theses"
+  },
+  "delta": "–",
+  "description": {
+    "de": "Betreute Bachelor- und Masterarbeiten",
+    "en": "Supervised bachelor's and master's theses"
+  }
+}
