@@ -112,6 +112,21 @@ export const chartMetaSchema = z.object({
   points: z.array(chartPointSchema).min(2),
 })
 
+export const publicationSchema = z.object({
+  key: z.string(),
+  type: z.enum(['article', 'inproceedings', 'book', 'techreport', 'misc']),
+  title: z.string(),
+  authors: z.array(z.string()),
+  year: z.number(),
+  venue: z.string().nullable(),
+  doi: z.string().nullable(),
+  url: z.string().nullable(),
+  pages: z.string().nullable(),
+  volume: z.string().nullable(),
+  number: z.string().nullable(),
+  publisher: z.string().nullable(),
+})
+
 export const timelineEventMetaSchema = z.object({
   id: z.string().trim().min(1),
   order: z.number().int().min(1),
@@ -135,4 +150,5 @@ export const resolvedYearDataSchema = z.object({
     month: z.number().int().min(1).max(12),
     events: z.array(timelineEventMetaSchema.omit({ order: true })).min(1),
   })).optional(),
+  publications: z.array(publicationSchema).optional(),
 })

@@ -11,6 +11,7 @@ import {
   chartMetaSchema,
   timelineEventMetaSchema,
 } from './schemas'
+import { parseBibtex } from './parseBibtex'
 import type { BodyComponentMap, LoadedReport, ReportYearSummary, YearData, YearMeta } from './types'
 
 // Module-level body component registry — never included in loader data (not serializable)
@@ -99,6 +100,12 @@ const rawMdxModules = import.meta.glob<MdxModule>(
   '../../content/years/*/sections/*/*.mdx',
   { eager: true },
 )
+
+// BibTeX publication lists — optional, one file per year
+const rawBibModules = import.meta.glob(
+  '../../content/years/*/publications.bib',
+  { eager: true, query: '?raw', import: 'default' },
+) as Record<string, string>
 
 // ── Path parsing helpers ───────────────────────────────────────────────────
 
@@ -402,6 +409,8 @@ function buildYearPackageIndex(): Map<string, YearPackage> {
     const kpis = collectKpis(year)
     const charts = collectCharts(year)
     const timeline = collectTimeline(year)
+    const rawBib = rawBibModules[`../../content/years/${year}/publications.bib`]
+    const publications = rawBib ? parseBibtex(rawBib) : undefined
 
     if (articles.length === 0) {
       throw new ContentContractError('Year has no articles', { year })
@@ -433,6 +442,7 @@ function buildYearPackageIndex(): Map<string, YearPackage> {
       highlights: highlights.map(({ order: _order, ...rest }) => rest),
       cooperationPartners: cooperationPartners.map(({ order: _order, ...rest }) => rest),
       timeline,
+      publications,
     }
 
     // Section MDX — now under sections/<locale>/<slug>.mdx

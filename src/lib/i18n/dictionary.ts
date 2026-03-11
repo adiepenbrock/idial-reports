@@ -69,6 +69,12 @@ export interface UiDictionary {
   tagsLabel: string
   timelineLabel: string
   timelineNoEvents: string
+  publicationsLabel: string
+  publicationTypeArticle: string
+  publicationTypeInproceedings: string
+  publicationTypeBook: string
+  publicationTypeReport: string
+  publicationTypeMisc: string
 }
 
 export const uiDictionary: Record<Locale, UiDictionary> = {
@@ -144,6 +150,12 @@ export const uiDictionary: Record<Locale, UiDictionary> = {
     tagsLabel: 'Themen',
     timelineLabel: 'Jahresrückblick',
     timelineNoEvents: 'Keine Ereignisse fuer diesen Monat verfuegbar.',
+    publicationsLabel: 'Publikationen',
+    publicationTypeArticle: 'Zeitschriftenartikel',
+    publicationTypeInproceedings: 'Konferenzbeiträge',
+    publicationTypeBook: 'Bücher & Buchkapitel',
+    publicationTypeReport: 'Berichte',
+    publicationTypeMisc: 'Sonstige',
   },
   en: {
     siteTitle: 'Annual Reports',
@@ -217,6 +229,12 @@ export const uiDictionary: Record<Locale, UiDictionary> = {
     tagsLabel: 'Topics',
     timelineLabel: 'Year in review',
     timelineNoEvents: 'No events available for this month.',
+    publicationsLabel: 'Publications',
+    publicationTypeArticle: 'Journal articles',
+    publicationTypeInproceedings: 'Conference papers',
+    publicationTypeBook: 'Books & book chapters',
+    publicationTypeReport: 'Reports',
+    publicationTypeMisc: 'Other',
   },
 }
 

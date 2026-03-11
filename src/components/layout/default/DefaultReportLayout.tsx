@@ -10,6 +10,7 @@ import Reveal from '#/components/motion/Reveal'
 import SectionNavigation from '#/components/navigation/SectionNavigation'
 import YearNavigation from '#/components/navigation/YearNavigation'
 import ReportInsightStrip from '#/components/report/ReportInsightStrip'
+import PublicationsList from '#/components/report/PublicationsList'
 import { getReportSectionComponent } from '#/lib/content/loadReports'
 import type { ReportLayoutProps } from '#/lib/layout/types'
 import { toLanguageTag } from '#/lib/i18n/locale'
@@ -98,10 +99,15 @@ export default function DefaultReportLayout({
 
         <div className="report-grid">
           <SectionNavigation
-            sections={report.sections.map((section) => ({
-              slug: section.slug,
-              label: section.label,
-            }))}
+            sections={[
+              ...report.sections.map((s) => ({ slug: s.slug, label: s.label })),
+              ...(report.data.timeline?.length
+                ? [{ slug: 'timeline', label: dictionary.timelineLabel }]
+                : []),
+              ...(report.data.publications?.length
+                ? [{ slug: 'publications', label: dictionary.publicationsLabel }]
+                : []),
+            ]}
             dictionary={dictionary}
           />
 
@@ -227,25 +233,46 @@ export default function DefaultReportLayout({
                 </Reveal>
               )
             })}
+
+            {report.data.timeline && report.data.timeline.length > 0 ? (() => {
+              const idx = report.sections.length
+              return (
+                <Reveal>
+                  <article id="timeline" className="report-section-card report-anchor-section">
+                    <header className="section-headline">
+                      <h2>{dictionary.timelineLabel}</h2>
+                      <span aria-hidden="true">{String(idx + 1).padStart(2, '0')}</span>
+                    </header>
+                    <AnimatedTimeline
+                      timeline={report.data.timeline}
+                      locale={contentLocale}
+                      year={report.year}
+                      label={dictionary.timelineLabel}
+                    />
+                  </article>
+                </Reveal>
+              )
+            })() : null}
+
+            {report.data.publications && report.data.publications.length > 0 ? (() => {
+              const idx = report.sections.length + (report.data.timeline?.length ? 1 : 0)
+              return (
+                <Reveal>
+                  <article id="publications" className="report-section-card report-anchor-section">
+                    <header className="section-headline">
+                      <h2>{dictionary.publicationsLabel}</h2>
+                      <span aria-hidden="true">{String(idx + 1).padStart(2, '0')}</span>
+                    </header>
+                    <PublicationsList
+                      publications={report.data.publications}
+                      dictionary={dictionary}
+                    />
+                  </article>
+                </Reveal>
+              )
+            })() : null}
           </div>
         </div>
-
-        {report.data.timeline && report.data.timeline.length > 0 ? (
-          <Reveal>
-            <section id="timeline" className="report-anchor-section timeline-wrapper">
-              <header className="section-headline">
-                <h2>{dictionary.timelineLabel}</h2>
-                <span aria-hidden="true">{String(report.sections.length + 1).padStart(2, '0')}</span>
-              </header>
-              <AnimatedTimeline
-                timeline={report.data.timeline}
-                locale={contentLocale}
-                year={report.year}
-                label={dictionary.timelineLabel}
-              />
-            </section>
-          </Reveal>
-        ) : null}
       </div>
     </div>
   )
